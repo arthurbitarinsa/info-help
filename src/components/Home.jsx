@@ -6,6 +6,9 @@ function Home() {
     
   return (
     <>
+    <body>
+      
+   
      <header>
         <div className="header">
            <h2 className="logo">INFO-HELP</h2>
@@ -54,6 +57,7 @@ function Home() {
             &copy; INFO-HELP all rigths reserved
         </p>
       </footer>
+      </body>
     </>
    
   )

@@ -1,4 +1,8 @@
 
+body {
+    background-color: #bcf305;
+}
+
 .medication{
     margin-top: 300px;
 }
@@ -17,6 +21,7 @@
 
     h2{
         cursor: pointer;
+        color: blue;
     }
 
 }
