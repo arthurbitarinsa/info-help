@@ -1,0 +1,25 @@
+/* Carousel container */
+section {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  /* Images in the carousel */
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Customize dots if needed */
+  .slick-dots li button:before {
+    color: #000;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #4CAF50;
+  }
+  

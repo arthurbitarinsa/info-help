@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css'
 import { Link } from 'react-router-dom'
+import ImageCarousel from './ImageCarousel';
 
 function Home() {
     
@@ -35,7 +36,7 @@ function Home() {
       </header>
 
       <section>
-         
+        <ImageCarousel/>
       </section>
 
       <footer>
@@ -52,10 +53,13 @@ function Home() {
             </div>
  
         </div>
-
-        <p>
+         
+         <div className='p-footer'>
+          <p>
             &copy; INFO-HELP all rigths reserved
         </p>
+         </div>
+        
       </footer>
       </body>
     </>

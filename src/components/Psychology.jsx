@@ -1,9 +1,14 @@
-import React from 'react'
+
+import React from 'react';
+import Header from './Header';
 
 function Psychology() {
   return (
-    <div>Psychology</div>
-  )
+    <>
+      <Header />
+      <div>Psychology</div>
+    </>
+  );
 }
 
-export default Psychology
+export default Psychology;

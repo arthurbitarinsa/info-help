@@ -1,4 +1,4 @@
-
+/* 
 body {
     background-color: #bcf305;
 }
@@ -43,7 +43,6 @@ body {
 
 
 
-/* CSS for Dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -89,7 +88,6 @@ body {
 
 
 
-/***/
 
 section{
     background: rgb(170, 166, 241);
@@ -133,4 +131,110 @@ footer{
         }
     }
 
+} */
+
+
+
+header{
+    background-color: red;
+    height: 70px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
 }
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+.links a{
+    margin: 0px 10px;
+}
+
+/**DROP DOWN/
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+
+
+
+/**/
+
+section{
+    background-color: green;
+    height: 600px;
+}
+
+footer{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-container{
+    background-color: aquamarine;
+    padding: 20px 0px;
+}
+
+.p-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
