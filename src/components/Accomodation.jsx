@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function Accomodation() {
   return (
-    <div>Accomodation</div>
-  )
+    <>
+      <Header />
+      <div>Accomodation</div>
+      <Footer />
+    </>
+  );
 }
 
-export default Accomodation
+export default Accomodation;

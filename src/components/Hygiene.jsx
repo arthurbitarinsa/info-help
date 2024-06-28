@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Hygiene() {
   return (
-    <div>Hygiene</div>
-  )
+    <>
+      <Header />
+      <div>Hygiene</div>
+      <Footer />
+    </>
+  );
 }
 
-export default Hygiene
+export default Hygiene;

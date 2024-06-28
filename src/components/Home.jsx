@@ -3,58 +3,14 @@ import "./home.css";
 import { Link } from "react-router-dom";
 import ImageCarousel from "./ImageCarousel";
 import arrow from "../images/next_190571.png";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Home() {
   return (
     <>
       <body>
-        <header>
-          <div className="header">
-            <h2 className="logo">INFO-HELP</h2>
-            <div className="links">
-              <a>
-                <Link to="/medication">Medication</Link>
-              </a>
-              <a>
-                <Link to="/food">Food</Link>
-              </a>
-              <a>
-                <Link to="/accomodation">Accomodation</Link>
-              </a>
-              <a>
-                <Link to="/hygiene">Hygiene</Link>
-              </a>
-              <a>
-                <Link to="/legal&safety">Legal & Safety Info</Link>
-              </a>
-            </div>
-
-            <div class="dropdown">
-              <button class="dropbtn">More</button>
-              <div class="dropdown-content">
-                <a>
-                  <Link to="/language">Language Learning Locations</Link>
-                </a>
-                <a>
-                  <Link to="/psychology">Psychological Help</Link>
-                </a>
-                <a>
-                  <Link to="/education">Education</Link>
-                </a>
-                <a>
-                  <Link to="/scolarships">Scolarships</Link>
-                </a>
-                <a>
-                  <Link to="/social">Social and Cultural Activities</Link>
-                </a>
-                <a>
-                  <Link to="/sports">Sports</Link>
-                </a>
-              </div>
-            </div>
-          </div>
-        </header>
-
+        <Header />
         <section>
           <div className="section-up">
             <ImageCarousel />
@@ -92,7 +48,11 @@ function Home() {
                   />
                   <p>Lorem ipsum dolor sit amet consectetur</p>
                   <button>
-                    locations here <img src={arrow} alt="" />
+                    <a>
+                      <Link to="/medication">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
                   </button>
                 </li>
                 <li>
@@ -103,7 +63,11 @@ function Home() {
                   />
                   <p>Lorem ipsum dolor sit amet consectetur</p>
                   <button>
-                    locations here <img src={arrow} alt="" />
+                    <a>
+                      <Link to="/food">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
                   </button>
                 </li>
                 <li>
@@ -114,7 +78,11 @@ function Home() {
                   />
                   <p>Lorem ipsum dolor sit amet consectetur</p>
                   <button>
-                    locations here <img src={arrow} alt="" />
+                    <a>
+                      <Link to="/accomodation">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
                   </button>
                 </li>
                 <li>
@@ -125,7 +93,11 @@ function Home() {
                   />
                   <p>Lorem ipsum dolor sit amet consectetur</p>
                   <button>
-                    locations here <img src={arrow} alt="" />
+                    <a>
+                      <Link to="/Hygiene">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
                   </button>
                 </li>
                 <li>
@@ -136,32 +108,20 @@ function Home() {
                   />
                   <p>Lorem ipsum dolor sit amet </p>
                   <button>
-                    locations here <img src={arrow} alt="" />
+                    <a>
+                      <Link to="/legal&safety">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
                   </button>
                 </li>
               </ul>
             </div>
           </article>
+          <div className="space"></div>
         </section>
 
-        <footer>
-          <div className="footer-container">
-            <div className="footer-links">
-              <h2>About us</h2>
-              <h2>Feedback and Support</h2>
-              <h2>Terms and privacy</h2>
-            </div>
-            <div className="footer-icons">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-twitter"></i>
-            </div>
-          </div>
-
-          <div className="p-footer">
-            <p>&copy; INFO-HELP all rigths reserved</p>
-          </div>
-        </footer>
+        <Footer />
       </body>
     </>
   );

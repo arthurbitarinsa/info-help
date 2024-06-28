@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Language() {
   return (
-    <div>Language</div>
-  )
+    <>
+      <Header />
+      <div>Language</div>
+      <Footer />
+    </>
+  );
 }
 
-export default Language
+export default Language;

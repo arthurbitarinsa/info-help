@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function Sports() {
   return (
-    <div>Sports</div>
-  )
+    <>
+      <Header />
+      <div>Sports</div>
+      <Footer />
+    </>
+  );
 }
 
-export default Sports
+export default Sports;
