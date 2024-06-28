@@ -79,6 +79,14 @@ section {
   min-height: 1000px;
 }
 
+.section-up {
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  gap: 50px;
+  padding: 0px 30px;
+  margin-top: -50px;
+}
+
 .section-down {
   background-color: lightblue;
   width: 100%;
@@ -128,7 +136,9 @@ article ul li {
   width: 150px;
   margin: 0px 5px;
   text-align: center;
-  border: 1px solid blue;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px black;
 }
 
 article ul li img {
