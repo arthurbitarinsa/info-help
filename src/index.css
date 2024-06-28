@@ -1,12 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-body{
-  background-color: orange;
-  height: 100vh;
-  padding: 0px 50px;
+body {
+  min-height: 100vh;
+  background-image: url("https://cdn.givingcompass.org/wp-content/uploads/2018/12/27111339/How-helping-people-affects-your-brain.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

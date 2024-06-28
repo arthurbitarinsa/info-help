@@ -1,14 +1,20 @@
-import React from 'react';
+import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './Carousel.css'; // Custom CSS for additional styling
+import "./Carousel.css"; // Custom CSS for additional styling
 
-const imageUrls = [
-  'https://via.placeholder.com/800x400?text=Image+1',
-  'https://via.placeholder.com/800x400?text=Image+2',
-  'https://via.placeholder.com/800x400?text=Image+3',
-  'https://via.placeholder.com/800x400?text=Image+4'
+import img1 from "../images/help1.avif";
+import img2 from "../images/help2.jpg";
+import img3 from "../images/help3.webp";
+import img4 from "../images/help4.jpg";
+
+const imageUrls = [img1, img2, img3, img4];
+const slideTexts = [
+  "Help One - Lorem ipsum dolor sit amet",
+  "Help Two - consectetur adipiscing elit",
+  "Help Three - sed do eiusmod tempor incididunt",
+  "Help Four - labore et dolore magna aliqua",
 ];
 
 function ImageCarousel() {
@@ -17,15 +23,18 @@ function ImageCarousel() {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (
-    <section>
+    <section className="image-div">
       <Slider {...settings}>
         {imageUrls.map((url, index) => (
           <div key={index}>
-            <img src={url} alt={`Slide ${index}`} className="carousel-image"/>
+            <img src={url} alt={`Slide ${index}`} className="carousel-image" />
+            <div className="image-text">{slideTexts[index]}</div>
           </div>
         ))}
       </Slider>
