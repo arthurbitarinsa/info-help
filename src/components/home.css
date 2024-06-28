@@ -147,21 +147,20 @@ article ul li img {
 }
 
 article ul li button {
-  background-color: black;
+  display: inline-block;
+  background-color: #4caf50;
   a {
-    color: orange;
+    color: #fff;
   }
-  padding: 5px;
-  cursor: pointer;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
   border: none;
 }
 
 article ul li button:hover {
-  background-color: lightblue;
-  a {
-    color: blue;
-  }
-  transition: 0.5s ease-in;
+  background-color: #45a049;
 }
 
 article ul li button img {
