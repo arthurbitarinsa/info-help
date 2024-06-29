@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function Scholarships() {
   return (
-    <div>Scholarships</div>
-  )
+    <>
+      <Header />
+      <div>Scholarships</div>
+      <Footer />
+    </>
+  );
 }
 
-export default Scholarships
+export default Scholarships;

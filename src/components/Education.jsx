@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Education() {
   return (
-    <div>Education</div>
-  )
+    <>
+      <Header />
+      <div>Education</div>
+      <Footer />
+    </>
+  );
 }
 
-export default Education
+export default Education;

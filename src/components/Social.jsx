@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Footer from "./Footer";
+import Header from "./Header";
 
 function Social() {
   return (
-    <div>Social</div>
-  )
+    <>
+      <Header />
+      <div>Social</div>
+      <Footer />
+    </>
+  );
 }
 
-export default Social
+export default Social;
