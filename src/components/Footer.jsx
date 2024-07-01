@@ -12,10 +12,10 @@ function Footer() {
             <Link to="/about">About us</Link>
           </a>
           <a>
-            <Link to="/feedback">Feedback and Support</Link>
+            <Link to="/privacy">Terms and privacy</Link>
           </a>
           <a>
-            <Link to="/privacy">Terms and privacy</Link>
+            <Link to="/feedback">Feedback and Support</Link>
           </a>
         </div>
         <div className="footer-icons">

@@ -230,9 +230,37 @@ function Home() {
               </ul>
             </div>
           </article>
-          <div className="space"></div>
         </section>
 
+        <section className="section2">
+          <div className="hr"></div>
+
+          <div className="support-container">
+            <div className="support-h1">
+              <h1>Leave a message</h1>
+            </div>
+            <form className="support-form">
+              <label htmlFor="name">Name</label>
+              <input type="text" id="name" name="name" required />
+
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" name="email" required />
+
+              <label htmlFor="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+
+              <label htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </section>
         <Footer />
       </body>
     </>
