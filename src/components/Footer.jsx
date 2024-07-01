@@ -1,6 +1,6 @@
 import React from "react";
-import "./home.css";
-import "./Carousel.css";
+import "../css/home.css";
+import "../css/Carousel.css";
 import { Link } from "react-router-dom";
 
 function Footer() {

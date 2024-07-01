@@ -154,19 +154,23 @@ article ul li img {
 
 article ul li button {
   display: inline-block;
-  background-color: #4caf50;
+  background-color: transparent;
+  /* background-color: #4caf50; */
   a {
-    color: #fff;
+    color: rgb(42, 113, 136);
   }
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
-  border: none;
+  border: 1px solid rgb(93, 192, 224);
 }
 
 article ul li button:hover {
   background-color: #45a049;
+  a {
+    color: white;
+  }
 }
 
 article ul li button img {

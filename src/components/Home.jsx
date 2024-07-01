@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+import "../css/home.css";
 import { Link } from "react-router-dom";
 import ImageCarousel from "./ImageCarousel";
 import arrow from "../images/next_190571.png";
@@ -222,7 +222,7 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        More here <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
