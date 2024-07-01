@@ -115,6 +115,118 @@ function Home() {
                     </a>
                   </button>
                 </li>
+
+                <li>
+                  <h3>Language </h3>
+                  <img
+                    src="https://eslbrains.com/wp-content/uploads/2019/09/how-to-learn-a-language-like-a-hyper-polyglot-473x381.png"
+                    alt=""
+                  />
+                  <p>Lorem ipsum dolor sit amet </p>
+                  <button>
+                    <a>
+                      <Link to="/legal&safety">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
+                  </button>
+                </li>
+
+                <li>
+                  <h3>Psychological </h3>
+                  <img
+                    src="https://www.open.edu.au/-/media/blog/2022/02-february/counseller-vs-psychologist.jpg?h=583&iar=0&w=715&rev=512145ae285b477ca8b74b09c9b9784b&hash=DC8EFD2462F9FC1C60EB86BA38F5CC89"
+                    alt=""
+                  />
+                  <p>Lorem ipsum dolor sit amet </p>
+                  <button>
+                    <a>
+                      <Link to="/legal&safety">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
+                  </button>
+                </li>
+
+                <li>
+                  <h3>Education </h3>
+                  <img
+                    src="https://www.salondeletudiant.ch/wp-content/uploads/2020/10/istock-499343530.jpg"
+                    alt=""
+                  />
+                  <p>Lorem ipsum dolor sit amet </p>
+                  <button>
+                    <a>
+                      <Link to="/legal&safety">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
+                  </button>
+                </li>
+
+                <li>
+                  <h3>Scholarships </h3>
+                  <img
+                    src="https://www.mim-essay.com/images/blogs/Scholarship%20for%20MS%20in%20USA.jpg"
+                    alt=""
+                  />
+                  <p>Lorem ipsum dolor sit amet </p>
+                  <button>
+                    <a>
+                      <Link to="/legal&safety">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
+                  </button>
+                </li>
+
+                <li>
+                  <h3>Social & Culture </h3>
+                  <img
+                    src="https://www.unicef.org/careers/sites/unicef.org.careers/files/styles/two_column/public/Priscilla%20Idele3.jpg.webp?itok=IYiHvGx2"
+                    alt=""
+                  />
+                  <p>Lorem ipsum dolor sit amet </p>
+                  <button>
+                    <a>
+                      <Link to="/legal&safety">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
+                  </button>
+                </li>
+
+                <li>
+                  <h3>Sports </h3>
+                  <img
+                    src="https://www.departement13.fr/uploads/pics/2024-01-29_BANNER_Tournee_Terre_de_Sports.jpg"
+                    alt=""
+                  />
+                  <p>Lorem ipsum dolor sit amet </p>
+                  <button>
+                    <a>
+                      <Link to="/legal&safety">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
+                  </button>
+                </li>
+
+                <li>
+                  <h3>More </h3>
+                  <img
+                    src="https://pbs.twimg.com/profile_images/558750489152458752/pBBTFL0j_400x400.png"
+                    alt=""
+                  />
+                  <p>Lorem ipsum dolor sit amet </p>
+                  <button>
+                    <a>
+                      <Link to="/legal&safety">
+                        locations here <img src={arrow} alt="" />
+                      </Link>
+                    </a>
+                  </button>
+                </li>
               </ul>
             </div>
           </article>
