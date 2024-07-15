@@ -1,6 +1,6 @@
 import React from "react";
-import "./home.css";
-import "./Carousel.css";
+import "../css/home.css";
+import "../css/Carousel.css";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -12,10 +12,10 @@ function Footer() {
             <Link to="/about">About us</Link>
           </a>
           <a>
-            <Link to="/feedback">Feedback and Support</Link>
+            <Link to="/privacy">Terms and privacy</Link>
           </a>
           <a>
-            <Link to="/privacy">Terms and privacy</Link>
+            <Link to="/feedback">Feedback and Support</Link>
           </a>
         </div>
         <div className="footer-icons">

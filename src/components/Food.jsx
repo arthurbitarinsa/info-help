@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import "../css/food.css";
 
 import clinicImg from "../images/help1.avif";
 import galileeImg from "../images/help1.avif";

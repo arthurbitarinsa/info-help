@@ -1,5 +1,5 @@
 import React from "react";
-import "./medication.css";
+import "../css/medication.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
