@@ -6,8 +6,11 @@ import arrow from "../images/next_190571.png";
 import Header from "./Header";
 import Footer from "./Footer";
 import emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -81,35 +84,20 @@ function Home() {
           <div className="section-up">
             <ImageCarousel />
             <div className="side-carousel">
-              <h3 className="informed">Get informed !</h3>
-              <p>
-                We are dedicated to helping you navigate the resources available
-                in your area. Whether you’re seeking assistance, free food,
-                shelter, or other essential services, you’ve come to the right
-                place. Our goal is to connect you with the help you need, when
-                you need it. Explore our platform, discover local services, and
-                find the support that can make a difference in your life.
-                Together, we can build a stronger community!
-              </p>
+              <h3 className="informed">{t("Get_informed")}</h3>
+              <p>{t("dedicated_message")}</p>
             </div>
           </div>
           <div className="section-down">
-            <i>
-              In every corner, help is near, A guiding light to calm your fear.
-              With open doors and hearts that care, We find the strength to rise
-              and share. Together, we can all be clear.When life feels hard, and
-              hope is thin, Our doors are open, let’s begin. For in the heart,
-              we find the key, To rise as one, to be set free. With every step,
-              together we stand, A world of kindness, hand in hand.
-            </i>
+            <i>{t("guiding_message")}</i>
           </div>
           <div className="hr"></div>
           <article>
-            <h2>Check Locations</h2>
+            <h2>{t("Check_Locations")}</h2>
             <div>
               <ul>
                 <li>
-                  <h3>Medication</h3>
+                  <h3>{t("Medication")}</h3>
                   <img
                     src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2541103.jpg"
                     alt=""
@@ -117,13 +105,13 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/medication">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
                 <li>
-                  <h3>Food</h3>
+                  <h3>{t("Food")}</h3>
                   <img
                     src="https://media.cnn.com/api/v1/images/stellar/prod/231113170330-ultraprocessed-foods-stock-image-restricted.jpg?c=original"
                     alt=""
@@ -131,13 +119,14 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/food">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")}
+                        <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
                 <li>
-                  <h3>Accomodation</h3>
+                  <h3>{t("Accomodation")}</h3>
                   <img
                     src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/fc/9a/b2/appartamento-deluxe-with-balcony-.jpg?w=700&h=-1&s=1"
                     alt=""
@@ -145,13 +134,13 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/accomodation">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
                 <li>
-                  <h3>Hygiene</h3>
+                  <h3>{t("Hygiene")}</h3>
                   <img
                     src="https://www.dresden.de/media/bilder/gesundheit/HYG/HYG_Haendewaschen.jpg"
                     alt=""
@@ -159,13 +148,13 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/Hygiene">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
                 <li>
-                  <h3>Legal & Safety </h3>
+                  <h3>{t("Legal_safety")} </h3>
                   <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8TcJEmxVvHEQ2P35-m8ro-WsBLEqtG49o3A&s"
                     alt=""
@@ -173,14 +162,15 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")}
+                        <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Language </h3>
+                  <h3>{t("Language")} </h3>
                   <img
                     src="https://eslbrains.com/wp-content/uploads/2019/09/how-to-learn-a-language-like-a-hyper-polyglot-473x381.png"
                     alt=""
@@ -188,14 +178,14 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Psychological </h3>
+                  <h3>{t("Psychological")} </h3>
                   <img
                     src="https://www.open.edu.au/-/media/blog/2022/02-february/counseller-vs-psychologist.jpg?h=583&iar=0&w=715&rev=512145ae285b477ca8b74b09c9b9784b&hash=DC8EFD2462F9FC1C60EB86BA38F5CC89"
                     alt=""
@@ -203,14 +193,14 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Education </h3>
+                  <h3>{t("Education")} </h3>
                   <img
                     src="https://www.salondeletudiant.ch/wp-content/uploads/2020/10/istock-499343530.jpg"
                     alt=""
@@ -218,14 +208,14 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Scholarships </h3>
+                  <h3>{t("Scholarships")} </h3>
                   <img
                     src="https://www.mim-essay.com/images/blogs/Scholarship%20for%20MS%20in%20USA.jpg"
                     alt=""
@@ -233,14 +223,14 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Social & Culture </h3>
+                  <h3>{t("Social_activities")} </h3>
                   <img
                     src="https://www.unicef.org/careers/sites/unicef.org.careers/files/styles/two_column/public/Priscilla%20Idele3.jpg.webp?itok=IYiHvGx2"
                     alt=""
@@ -248,14 +238,14 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Sports </h3>
+                  <h3>{t("Sports")} </h3>
                   <img
                     src="https://www.departement13.fr/uploads/pics/2024-01-29_BANNER_Tournee_Terre_de_Sports.jpg"
                     alt=""
@@ -263,14 +253,14 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>More </h3>
+                  <h3>{t("More")} </h3>
                   <img
                     src="https://pbs.twimg.com/profile_images/558750489152458752/pBBTFL0j_400x400.png"
                     alt=""
@@ -278,7 +268,7 @@ function Home() {
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        More here <img src={arrow} alt="" />
+                        {t("More_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
@@ -292,10 +282,10 @@ function Home() {
           <div className="hr"></div>
           <div className="support-container">
             <div className="support-h1">
-              <h1>Leave a message</h1>
+              <h1>{t("message")}</h1>
             </div>
             <form className="support-form" onSubmit={handleSubmit}>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">{t("name")}</label>
               <input
                 type="text"
                 id="name"
@@ -305,7 +295,7 @@ function Home() {
                 required
               />
 
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{t("email")}</label>
               <input
                 type="email"
                 id="email"
@@ -315,7 +305,7 @@ function Home() {
                 required
               />
 
-              <label htmlFor="subject">Subject</label>
+              <label htmlFor="subject">{t("subject")}</label>
               <input
                 type="text"
                 id="subject"
@@ -325,7 +315,7 @@ function Home() {
                 required
               />
 
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">{t("message_placeholder")}</label>
               <textarea
                 id="message"
                 name="message"
@@ -336,7 +326,7 @@ function Home() {
               ></textarea>
 
               <button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : "Submit"}
+                {isSubmitting ? t("sending") : t("Submit")}
               </button>
             </form>
             {submissionStatus && (
