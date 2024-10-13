@@ -14,58 +14,35 @@ function Social() {
       <div className="container">
         <div>
           <div>
-            <h2> SOCIAL</h2>
+            <h2> SOCIAL AND CULTURE SERVICES</h2>
             <br />
             <i>
-              SOCIAL Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Esse, minima!
+            Engaging in social and cultural activities is essential for 
+            building connections, fostering integration, and enriching your life. Below are some of the organisations 
+            that may be suitable for this, dont miss out on the opportunity to intergrate in the society
               <br />
               <br />
             </i>
           </div>
         </div>
 
-        <div>
-          <div className="article">
+        <div className="article">
             <img
-              src={clinicImg}
-              alt="Free Clinic Asbl"
-              className="article-img"
-            />
-            <div className="article-details">
-              <h3>Free Clinic Asbl</h3>
-              <p>
-                Address - chau.de Wvre 154/a, 1050 ixelles <br />
-                Open - Monday-Friday from 8:45 a.m - 6:30 p.m <br />
-                Telephone: 02 512 13 14 (Recommended to Call for appointment){" "}
-                <br />
-              </p>
-              <a
-                href="https://example.com/clinic"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="article-button"
-              >
-                Visit Website
-              </a>
-            </div>
-          </div>
-
-          <div className="article">
-            <img
-              src={galileeImg}
+              src="https://static.wixstatic.com/media/9f8790_8eccce238e0a425ead76c7cde4a61209~mv2.png/v1/fill/w_200,h_85,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9f8790_8eccce238e0a425ead76c7cde4a61209~mv2.png"
               alt="Maison Médicale Galilée"
               className="article-img"
             />
             <div className="article-details">
-              <h3>Maison Médicale Galilée</h3>
+              <h3>SINGA</h3>
               <p>
-                Address - Rue Emile Féron 27, 1060 Saint-Gilles <br />
-                Open - Monday-Friday from 8:00 a.m - 7p.m <br />
-                Telephone: 02 539 29 58
+                Various Social and Cultural activities running through out the week <br />
+                Address - Rue Van Hoorde, 47 <br />
+                1030 Schaerbeek <br />
+                Visit Website for more Contact details
+                
               </p>
               <a
-                href="https://example.com/galilee"
+                href="https://www.singa-belgium.org/contact-fr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="article-button"
@@ -75,21 +52,24 @@ function Social() {
             </div>
           </div>
 
+
+        <div>
           <div className="article">
             <img
-              src={santeImg}
-              alt="Maison Médicale Santé Plurielle"
+              src="http://www.jamaissanstoit.org/wp-content/uploads/2017/08/Very_small_logo.png"
+              alt="Free Clinic Asbl"
               className="article-img"
             />
             <div className="article-details">
-              <h3>Maison Médicale Santé Plurielle</h3>
+              <h3>Jamais Sans Toit</h3>
               <p>
-                Address - Rue de la Victoire 110, 1060 Saint-Gilles <br />
-                Open - Monday-Friday from 8:00 a.m - 7p.m <br />
-                Saturday from 10 a.m - 11:30 p.m
+                Address - 43 rue de Villers Au coin de la rue Dinant, 29, 1000 Bruxelles <br />
+                Open - Monday-Friday from 9h  - 5h <br />
+                Telephone: 02 551 17 77
+                <br />
               </p>
               <a
-                href="https://example.com/sante"
+                href="https://www.jamaissanstoit.org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="article-button"
@@ -98,6 +78,9 @@ function Social() {
               </a>
             </div>
           </div>
+
+          
+          
         </div>
       </div>
 

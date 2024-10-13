@@ -17,8 +17,8 @@ function Hygiene() {
             <h2>HYGIENE</h2>
             <br />
             <i>
-              HYGIENE Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Esse, minima!
+            Maintaining good hygiene is essential for your health and well-being. This hygiene page provides
+             information and resources to help you access essential hygiene products and services
               <br />
               <br />
             </i>
@@ -27,21 +27,21 @@ function Hygiene() {
 
         <div>
           <div className="article">
-            <img
-              src={clinicImg}
-              alt="Free Clinic Asbl"
+          <img
+              src="https://doucheflux.be/wp-content/uploads/2023/06/capture-decran-2023-06-20-a-21.06.53-e1687288099256-279x300.png"
+              alt="DoucheFlux"
               className="article-img"
             />
             <div className="article-details">
-              <h3>Free Clinic Asbl</h3>
+              <h3>DoucheFLUX</h3>
               <p>
-                Address - chau.de Wvre 154/a, 1050 ixelles <br />
-                Open - Monday-Friday from 8:45 a.m - 6:30 p.m <br />
-                Telephone: 02 512 13 14 (Recommended to Call for appointment){" "}
-                <br />
+                Address - Rue des Vétérinaires 84 <br />
+                Open - Monday-Friday from 9:00 a.m - 6p.m <br />
+                Telephone: 02 319 58 27 <br />
+                Go here for a shower, but there is a lot more
               </p>
               <a
-                href="https://example.com/clinic"
+                href="https://doucheflux.be/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="article-button"
@@ -53,19 +53,19 @@ function Hygiene() {
 
           <div className="article">
             <img
-              src={galileeImg}
+              src= "https://lesmarolles.be/wp-content/uploads/2021/01/cropped-cropped-logo-marolles-1.png"
               alt="Maison Médicale Galilée"
               className="article-img"
             />
             <div className="article-details">
-              <h3>Maison Médicale Galilée</h3>
+              <h3>Pierre d'Angle</h3>
               <p>
-                Address - Rue Emile Féron 27, 1060 Saint-Gilles <br />
-                Open - Monday-Friday from 8:00 a.m - 7p.m <br />
-                Telephone: 02 539 29 58
+                Address - Rue Terre Neuve 153, 1000 Bruxelles <br />
+                Email: secretariat@pierredangle.be <br />
+                Telephone: 02 513 38 01
               </p>
               <a
-                href="https://example.com/galilee"
+                href="https://lesmarolles.be/Organization/pierre-dangle-asbl/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="article-button"
@@ -77,12 +77,12 @@ function Hygiene() {
 
           <div className="article">
             <img
-              src={santeImg}
+              src="https://dev2023.vivre-ensemble.be/wp-content/uploads/sites/3/2022/02/vivre-logo.png"
               alt="Maison Médicale Santé Plurielle"
               className="article-img"
             />
             <div className="article-details">
-              <h3>Maison Médicale Santé Plurielle</h3>
+              <h3>Rolling Douche</h3>
               <p>
                 Address - Rue de la Victoire 110, 1060 Saint-Gilles <br />
                 Open - Monday-Friday from 8:00 a.m - 7p.m <br />

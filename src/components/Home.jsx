@@ -9,7 +9,7 @@ import Footer from "./Footer";
 function Home() {
   return (
     <>
-      <body>
+      <body>²
         <Header />
         <section>
           <div className="section-up">
@@ -17,23 +17,12 @@ function Home() {
             <div className="side-carousel">
               <h3 className="informed">Get informed !</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
-                fuga natus explicabo voluptate. Quasi dignissimos enim quae
-                facilis accusantium odit earum accusamus sit repellendus
-                repellat? Magni cum quis placeat asperiores, eos quod. Voluptas,
-                modi quo consectetur recusandae nulla labore dolorum culpa
-                ullam. Tempora qui adipisci eos hic reprehenderit sequi
-                esse?Lorem ipsum dolor,
+              Welcome to Pathfinder Brussels. Our online platform is your go-to resource for finding essential services and support in Brussels. Discover a curated list of organizations offering free assistance to new arrivals, asylum seekers, refugees, and individuals facing challenges. Whether you need shelter, legal advice, or help with daily necessities, Pathfinder Brussels provides precise information to guide you on your journey.
               </p>
             </div>
           </div>
           <div className="section-down">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            doloribus aliquam officiis ad soluta aperiam hic rem labore, <br />
-            reiciendis atque. Aliquid ut omnis nam suscipit molestiae excepturi
-            alias ad officiis ipsam, rerum autem similique at labore. <br />
-            Atque doloremque asperiores ratione quo accusamus. Vero voluptatum
-            esse voluptatibus saepe quasi quae cupiditate!
+          Pathfinder Brussels is committed to empowering individuals by providing timely and accurate information. We understand that navigating a new city can be overwhelming, and our platform is designed to simplify your search for the support you need. With Pathfinder Brussels, you can confidently access the resources that will help you thrive in your new community.
           </div>
           <div className="hr"></div>
           <article>
@@ -268,3 +257,11 @@ function Home() {
 }
 
 export default Home;
+
+
+/*
+https://github.com/iridia-ulb/INFOH410 
+https://github.com/iridia-ulb/AI-book 
+https://github.com/iridia-ulb 
+https://github.com/TheoVerhelst/Big-Data-Analytics-INFOH515-202223
+*/

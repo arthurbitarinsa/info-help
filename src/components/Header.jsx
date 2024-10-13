@@ -9,7 +9,7 @@ function Header() {
       <div className="header">
         <h2 className="logo">
           <a>
-            <Link to="/"> INFO-HELP</Link>
+            <Link to="/"> Path Finder Brussels</Link>
           </a>
         </h2>
         <div className="links">
@@ -34,7 +34,7 @@ function Header() {
           <button class="dropbtn">More</button>
           <div class="dropdown-content">
             <a>
-              <Link to="/language">Language Learning Locations</Link>
+              <Link to="/language">Language Learning</Link>
             </a>
             <a>
               <Link to="/psychology">Psychological Help</Link>

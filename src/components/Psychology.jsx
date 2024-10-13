@@ -9,18 +9,18 @@ import santeImg from "../images/help1.avif";
 
 function Psychology() {
   return (
-    <>
+    <>         
       <Header />
       <div className="container">
         <div>
           <div>
-            <h2>PSYCHOLOGY</h2>
+            <h2>MENTAL HEALTH</h2>
             <br />
             <i>
-              PSYCHOLOGY Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Esse, minima!
-              <br />
-              <br />
+              Psycological support is a vital part of mental health and treatment that very many people tend to ignore
+              <br /> yet very important for personal development and helpful to get your brain set to pursue other goals 
+              <br /> despite of a disturbing mental state. Below is a list of organisations offering this useful service <br />
+              free of charge
             </i>
           </div>
         </div>
@@ -28,20 +28,22 @@ function Psychology() {
         <div>
           <div className="article">
             <img
-              src={clinicImg}
-              alt="Free Clinic Asbl"
+              src="https://static.wixstatic.com/media/dc85f6_76563196d4cc437ab5a7842244ac5be0~mv2.jpg/v1/crop/x_210,y_100,w_1275,h_1002/fill/w_178,h_140,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/logo_ulysse_72dpi.jpg"
+              alt="ulysse"
               className="article-img"
             />
             <div className="article-details">
-              <h3>Free Clinic Asbl</h3>
+              <h3>Ulysse</h3>
               <p>
-                Address - chau.de Wvre 154/a, 1050 ixelles <br />
-                Open - Monday-Friday from 8:45 a.m - 6:30 p.m <br />
-                Telephone: 02 512 13 14 (Recommended to Call for appointment){" "}
+                Addresss - Rue de l'Ermitage 52 Bruxelles<br />
+                Email -  accueil@ulysse-ssm.be <br />
+                Open - Monday-Friday from 9:00 a.m - 5:00 p.m <br />
+                Telephone: +32 2 533 06 70
                 <br />
+
               </p>
               <a
-                href="https://example.com/clinic"
+                href="https://www.ulysse-ssm.be/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="article-button"
@@ -53,19 +55,21 @@ function Psychology() {
 
           <div className="article">
             <img
-              src={galileeImg}
-              alt="Maison Médicale Galilée"
+              src="https://img.mailinblue.com/3211998/images/rnb/original/5f91719a8e11cc52d86a4f00.png"
+              alt="PAG-ASA"
               className="article-img"
             />
             <div className="article-details">
-              <h3>Maison Médicale Galilée</h3>
+              <h3>PAG-ASA</h3>
               <p>
-                Address - Rue Emile Féron 27, 1060 Saint-Gilles <br />
-                Open - Monday-Friday from 8:00 a.m - 7p.m <br />
-                Telephone: 02 539 29 58
+                Address - Rue des Alexiens 16b  Brussels <br />
+                Email - info@pag-asa.be <br />
+                Open - Monday-Friday from 9:00 a.m - 5p.m <br />
+                Telephone: 02 511 64 64 <br />
+                Whatsapp - 0470 94 07 77
               </p>
               <a
-                href="https://example.com/galilee"
+                href="https://pag-asa.be/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="article-button"
@@ -75,29 +79,7 @@ function Psychology() {
             </div>
           </div>
 
-          <div className="article">
-            <img
-              src={santeImg}
-              alt="Maison Médicale Santé Plurielle"
-              className="article-img"
-            />
-            <div className="article-details">
-              <h3>Maison Médicale Santé Plurielle</h3>
-              <p>
-                Address - Rue de la Victoire 110, 1060 Saint-Gilles <br />
-                Open - Monday-Friday from 8:00 a.m - 7p.m <br />
-                Saturday from 10 a.m - 11:30 p.m
-              </p>
-              <a
-                href="https://example.com/sante"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="article-button"
-              >
-                Visit Website
-              </a>
-            </div>
-          </div>
+          
         </div>
       </div>
       <Footer />

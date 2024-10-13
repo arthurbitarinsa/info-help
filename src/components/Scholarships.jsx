@@ -17,8 +17,9 @@ function Scholarships() {
             <h2> SCHOLARSHIPS</h2>
             <br />
             <i>
-              SCHOLARSHIPS Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Esse, minima!
+              Scholarships always come as a burden reliever and so important to pursue higher studies, below <br />
+              are some of higher institutions that have Refugee scholarship programs, <br />
+              reach out to find out more about eligibility
               <br />
               <br />
             </i>
@@ -28,20 +29,22 @@ function Scholarships() {
         <div>
           <div className="article">
             <img
-              src={clinicImg}
-              alt="Free Clinic Asbl"
+              src="https://th.bing.com/th/id/R.6972e29f87ffa622dad1d782e24d8ab3?rik=sVNrl1sGJJf%2fOA&pid=ImgRaw&r=0"
+              alt="Linguapolis"
               className="article-img"
             />
             <div className="article-details">
-              <h3>Free Clinic Asbl</h3>
+              <h3>Linguapolis- University of Antwerp</h3>
               <p>
-                Address - chau.de Wvre 154/a, 1050 ixelles <br />
-                Open - Monday-Friday from 8:45 a.m - 6:30 p.m <br />
-                Telephone: 02 512 13 14 (Recommended to Call for appointment){" "}
+                Address -Stadscampus Kleine Kauwenberg 122000 Antwerpen <br />
+                Email - prepyear@linguapolis.be <br />
+                Telephone: 02 512 13 14 (By appointment only) <br />
+                18-25 years,  visit website for more details
+
                 <br />
               </p>
               <a
-                href="https://example.com/clinic"
+                href="https://www.uantwerpen.be/en/centres/linguapolis/academic-dutch-english/one-year-dutch-programme/scholarships-for-refugees/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="article-button"
@@ -51,53 +54,8 @@ function Scholarships() {
             </div>
           </div>
 
-          <div className="article">
-            <img
-              src={galileeImg}
-              alt="Maison Médicale Galilée"
-              className="article-img"
-            />
-            <div className="article-details">
-              <h3>Maison Médicale Galilée</h3>
-              <p>
-                Address - Rue Emile Féron 27, 1060 Saint-Gilles <br />
-                Open - Monday-Friday from 8:00 a.m - 7p.m <br />
-                Telephone: 02 539 29 58
-              </p>
-              <a
-                href="https://example.com/galilee"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="article-button"
-              >
-                Visit Website
-              </a>
-            </div>
-          </div>
-
-          <div className="article">
-            <img
-              src={santeImg}
-              alt="Maison Médicale Santé Plurielle"
-              className="article-img"
-            />
-            <div className="article-details">
-              <h3>Maison Médicale Santé Plurielle</h3>
-              <p>
-                Address - Rue de la Victoire 110, 1060 Saint-Gilles <br />
-                Open - Monday-Friday from 8:00 a.m - 7p.m <br />
-                Saturday from 10 a.m - 11:30 p.m
-              </p>
-              <a
-                href="https://example.com/sante"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="article-button"
-              >
-                Visit Website
-              </a>
-            </div>
-          </div>
+          
+          
         </div>
       </div>
 
