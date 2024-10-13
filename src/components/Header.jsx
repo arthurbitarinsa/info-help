@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import "../css/home.css";
 import "../css/Carousel.css";
 import { Link } from "react-router-dom";
-import i18n from "../i18n";
 import Select from "react-select";
 
 function Header() {
@@ -48,30 +47,14 @@ function Header() {
     <header>
       <div className="header">
         <h2 className="logo">
-          <a>
-<<<<<<< HEAD
-            <Link to="/"> Path Finder Brussels</Link>
-=======
-            <Link to="/">INFO-HELP</Link>
->>>>>>> 03a58e05264537992078fe13d346e9f9bd236393
-          </a>
+          <Link to="/">INFO-HELP</Link>
         </h2>
         <div className="links">
-          <a>
-            <Link to="/medication">{t("Medication")}</Link>
-          </a>
-          <a>
-            <Link to="/food">{t("Food")}</Link>
-          </a>
-          <a>
-            <Link to="/accomodation">{t("Accomodation")}</Link>
-          </a>
-          <a>
-            <Link to="/hygiene">{t("Hygiene")}</Link>
-          </a>
-          <a>
-            <Link to="/legal&safety">{t("Legal_safety")}</Link>
-          </a>
+          <Link to="/medication">{t("Medication")}</Link>
+          <Link to="/food">{t("Food")}</Link>
+          <Link to="/accomodation">{t("Accomodation")}</Link>
+          <Link to="/hygiene">{t("Hygiene")}</Link>
+          <Link to="/legal&safety">{t("Legal_safety")}</Link>
         </div>
 
         <div className="language-switch">
@@ -88,28 +71,12 @@ function Header() {
         <div className="dropdown">
           <button className="dropbtn">{t("More")}</button>
           <div className="dropdown-content">
-            <a>
-<<<<<<< HEAD
-              <Link to="/language">Language Learning</Link>
-=======
-              <Link to="/language">{t("Language_learning")}</Link>
->>>>>>> 03a58e05264537992078fe13d346e9f9bd236393
-            </a>
-            <a>
-              <Link to="/psychology">{t("Psychological_help")}</Link>
-            </a>
-            <a>
-              <Link to="/education">{t("Education")}</Link>
-            </a>
-            <a>
-              <Link to="/scolarships">{t("Scolarships")}</Link>
-            </a>
-            <a>
-              <Link to="/social">{t("Social_activities")}</Link>
-            </a>
-            <a>
-              <Link to="/sports">{t("Sports")}</Link>
-            </a>
+            <Link to="/language">{t("Language_learning")}</Link>
+            <Link to="/psychology">{t("Psychological_help")}</Link>
+            <Link to="/education">{t("Education")}</Link>
+            <Link to="/scolarships">{t("Scolarships")}</Link>
+            <Link to="/social">{t("Social_activities")}</Link>
+            <Link to="/sports">{t("Sports")}</Link>
           </div>
         </div>
       </div>
