@@ -1,12 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/home.css";
 import { Link } from "react-router-dom";
 import ImageCarousel from "./ImageCarousel";
 import arrow from "../images/next_190571.png";
 import Header from "./Header";
 import Footer from "./Footer";
+import emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+  const { t } = useTranslation();
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [submissionStatus, setSubmissionStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      setSubmissionStatus("All fields must be filled.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmissionStatus("");
+
+    const data = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    emailjs
+      .send("service_oaq5fhn", "template_abcb0dc", data, "b4j_WJ11JcUJkySWD")
+      .then(
+        (response) => {
+          console.log("Message sent successfully : ", response);
+          setSubmissionStatus(
+            "Thank you for your message! We will get back to you soon."
+          );
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("Failed to send the message : ", error);
+          setSubmissionStatus("Message sending failed. Please try again.");
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
+  };
   return (
     <>
       <body>²
@@ -15,6 +84,7 @@ function Home() {
           <div className="section-up">
             <ImageCarousel />
             <div className="side-carousel">
+<<<<<<< HEAD
               <h3 className="informed">Get informed !</h3>
               <p>
               Welcome to Pathfinder Brussels. Our online platform is your go-to resource for finding essential services and support in Brussels. Discover a curated list of organizations offering free assistance to new arrivals, asylum seekers, refugees, and individuals facing challenges. Whether you need shelter, legal advice, or help with daily necessities, Pathfinder Brussels provides precise information to guide you on your journey.
@@ -23,195 +93,193 @@ function Home() {
           </div>
           <div className="section-down">
           Pathfinder Brussels is committed to empowering individuals by providing timely and accurate information. We understand that navigating a new city can be overwhelming, and our platform is designed to simplify your search for the support you need. With Pathfinder Brussels, you can confidently access the resources that will help you thrive in your new community.
+=======
+              <h3 className="informed">{t("Get_informed")}</h3>
+              <p>{t("dedicated_message")}</p>
+            </div>
+          </div>
+          <div className="section-down">
+            <i>{t("guiding_message")}</i>
+>>>>>>> 03a58e05264537992078fe13d346e9f9bd236393
           </div>
           <div className="hr"></div>
           <article>
-            <h2>Check Locations</h2>
+            <h2>{t("Check_Locations")}</h2>
             <div>
               <ul>
                 <li>
-                  <h3>Medication</h3>
+                  <h3>{t("Medication")}</h3>
                   <img
                     src="https://sa1s3optim.patientpop.com/assets/images/provider/photos/2541103.jpg"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet consectetur</p>
                   <button>
                     <a>
                       <Link to="/medication">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
                 <li>
-                  <h3>Food</h3>
+                  <h3>{t("Food")}</h3>
                   <img
                     src="https://media.cnn.com/api/v1/images/stellar/prod/231113170330-ultraprocessed-foods-stock-image-restricted.jpg?c=original"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet consectetur</p>
                   <button>
                     <a>
                       <Link to="/food">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")}
+                        <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
                 <li>
-                  <h3>Accomodation</h3>
+                  <h3>{t("Accomodation")}</h3>
                   <img
                     src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/fc/9a/b2/appartamento-deluxe-with-balcony-.jpg?w=700&h=-1&s=1"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet consectetur</p>
                   <button>
                     <a>
                       <Link to="/accomodation">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
                 <li>
-                  <h3>Hygiene</h3>
+                  <h3>{t("Hygiene")}</h3>
                   <img
                     src="https://www.dresden.de/media/bilder/gesundheit/HYG/HYG_Haendewaschen.jpg"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet consectetur</p>
                   <button>
                     <a>
                       <Link to="/Hygiene">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
                 <li>
-                  <h3>Legal & Safety </h3>
+                  <h3>{t("Legal_safety")} </h3>
                   <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8TcJEmxVvHEQ2P35-m8ro-WsBLEqtG49o3A&s"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet </p>
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")}
+                        <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Language </h3>
+                  <h3>{t("Language")} </h3>
                   <img
                     src="https://eslbrains.com/wp-content/uploads/2019/09/how-to-learn-a-language-like-a-hyper-polyglot-473x381.png"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet </p>
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Psychological </h3>
+                  <h3>{t("Psychological")} </h3>
                   <img
                     src="https://www.open.edu.au/-/media/blog/2022/02-february/counseller-vs-psychologist.jpg?h=583&iar=0&w=715&rev=512145ae285b477ca8b74b09c9b9784b&hash=DC8EFD2462F9FC1C60EB86BA38F5CC89"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet </p>
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Education </h3>
+                  <h3>{t("Education")} </h3>
                   <img
                     src="https://www.salondeletudiant.ch/wp-content/uploads/2020/10/istock-499343530.jpg"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet </p>
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Scholarships </h3>
+                  <h3>{t("Scholarships")} </h3>
                   <img
                     src="https://www.mim-essay.com/images/blogs/Scholarship%20for%20MS%20in%20USA.jpg"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet </p>
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Social & Culture </h3>
+                  <h3>{t("Social_activities")} </h3>
                   <img
                     src="https://www.unicef.org/careers/sites/unicef.org.careers/files/styles/two_column/public/Priscilla%20Idele3.jpg.webp?itok=IYiHvGx2"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet </p>
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>Sports </h3>
+                  <h3>{t("Sports")} </h3>
                   <img
                     src="https://www.departement13.fr/uploads/pics/2024-01-29_BANNER_Tournee_Terre_de_Sports.jpg"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet </p>
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        locations here <img src={arrow} alt="" />
+                        {t("locations_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
                 </li>
 
                 <li>
-                  <h3>More </h3>
+                  <h3>{t("More")} </h3>
                   <img
                     src="https://pbs.twimg.com/profile_images/558750489152458752/pBBTFL0j_400x400.png"
                     alt=""
                   />
-                  <p>Lorem ipsum dolor sit amet </p>
                   <button>
                     <a>
                       <Link to="/legal&safety">
-                        More here <img src={arrow} alt="" />
+                        {t("More_here")} <img src={arrow} alt="" />
                       </Link>
                     </a>
                   </button>
@@ -223,31 +291,58 @@ function Home() {
 
         <section className="section2">
           <div className="hr"></div>
-
           <div className="support-container">
             <div className="support-h1">
-              <h1>Leave a message</h1>
+              <h1>{t("message")}</h1>
             </div>
-            <form className="support-form">
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" required />
+            <form className="support-form" onSubmit={handleSubmit}>
+              <label htmlFor="name">{t("name")}</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
 
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required />
+              <label htmlFor="email">{t("email")}</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
 
-              <label htmlFor="subject">Subject</label>
-              <input type="text" id="subject" name="subject" required />
+              <label htmlFor="subject">{t("subject")}</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleInputChange}
+                required
+              />
 
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">{t("message_placeholder")}</label>
               <textarea
                 id="message"
                 name="message"
                 rows="5"
+                value={formData.message}
+                onChange={handleInputChange}
                 required
               ></textarea>
 
-              <button type="submit">Submit</button>
+              <button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? t("sending") : t("Submit")}
+              </button>
             </form>
+            {submissionStatus && (
+              <p className="success-message">{submissionStatus}</p>
+            )}
           </div>
         </section>
         <Footer />
