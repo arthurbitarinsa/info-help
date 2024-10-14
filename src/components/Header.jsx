@@ -69,18 +69,18 @@ function Header() {
       ),
     },
 
-    {
-      value: "pt",
-      label: (
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1200px-Flag_of_Portugal.svg.png"
-            alt="pt"
-            style={{ width: "20px", height: "15px" }}
-          />
-        </div>
-      ),
-    },
+    // {
+    //   value: "pt",
+    //   label: (
+    //     <div>
+    //       <img
+    //         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1200px-Flag_of_Portugal.svg.png"
+    //         alt="pt"
+    //         style={{ width: "20px", height: "15px" }}
+    //       />
+    //     </div>
+    //   ),
+    // },
 
     {
       value: "lg",
@@ -116,6 +116,19 @@ function Header() {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg/1200px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png"
             alt="lingala"
+            style={{ width: "20px", height: "15px" }}
+          />
+        </div>
+      ),
+    },
+
+    {
+      value: "ar",
+      label: (
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/langfr-225px-Flag_of_Saudi_Arabia.svg.png"
+            alt="ar"
             style={{ width: "20px", height: "15px" }}
           />
         </div>
