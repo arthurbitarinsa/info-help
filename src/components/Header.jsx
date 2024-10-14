@@ -63,7 +63,20 @@ function Header() {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/800px-Flag_of_Uganda.svg.png
 "
-            alt="Dutch"
+            alt="Luganda"
+            style={{ width: "20px", height: "15px" }}
+          />
+        </div>
+      ),
+    },
+
+    {
+      value: "sw",
+      label: (
+        <div>
+          <img
+            src="https://cdn.britannica.com/20/20-050-33766E25/Flag-Tanzania.jpg"
+            alt="swahili"
             style={{ width: "20px", height: "15px" }}
           />
         </div>
