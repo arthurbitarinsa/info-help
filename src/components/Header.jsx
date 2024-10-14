@@ -42,6 +42,19 @@ function Header() {
         </div>
       ),
     },
+
+    {
+      value: "nl",
+      label: (
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png"
+            alt="Dutch"
+            style={{ width: "20px", height: "15px" }}
+          />
+        </div>
+      ),
+    },
   ];
 
   return (
