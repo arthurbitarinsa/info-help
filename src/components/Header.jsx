@@ -57,6 +57,32 @@ function Header() {
     },
 
     {
+      value: "es",
+      label: (
+        <div>
+          <img
+            src="https://www.larousse.fr/encyclopedie/data/images/1009665-Drapeau_de_lEspagne.jpg"
+            alt="es"
+            style={{ width: "20px", height: "15px" }}
+          />
+        </div>
+      ),
+    },
+
+    {
+      value: "pt",
+      label: (
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1200px-Flag_of_Portugal.svg.png"
+            alt="pt"
+            style={{ width: "20px", height: "15px" }}
+          />
+        </div>
+      ),
+    },
+
+    {
       value: "lg",
       label: (
         <div>
@@ -90,32 +116,6 @@ function Header() {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg/1200px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png"
             alt="lingala"
-            style={{ width: "20px", height: "15px" }}
-          />
-        </div>
-      ),
-    },
-
-    {
-      value: "es",
-      label: (
-        <div>
-          <img
-            src="https://www.larousse.fr/encyclopedie/data/images/1009665-Drapeau_de_lEspagne.jpg"
-            alt="es"
-            style={{ width: "20px", height: "15px" }}
-          />
-        </div>
-      ),
-    },
-
-    {
-      value: "pt",
-      label: (
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1200px-Flag_of_Portugal.svg.png"
-            alt="pt"
             style={{ width: "20px", height: "15px" }}
           />
         </div>
