@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "../css/home.css";
 import "../css/Carousel.css";
+import helplogo from "../images/Helplogo.png";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 import i18n from "../i18n";
@@ -141,7 +142,9 @@ function Header() {
       <div className="header">
         <h2 className="logo">
           <a>
-            <Link to="/">INFO-HELP</Link>
+            <Link to="/">
+              <img src={helplogo} alt="" />
+            </Link>
           </a>
         </h2>
         <div className="links">
