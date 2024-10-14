@@ -1,0 +1,125 @@
+/* General article styling */
+article {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+article h2 {
+  margin-bottom: 20px;
+  color: #2a7188;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Flex grid for wrapping the articles */
+.article-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual grid item styling */
+.grid-item {
+  width: calc(25% - 20px); /* 4 items per row with gap */
+  min-width: 250px; /* Ensures minimum width on smaller screens */
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Flex container for text and image */
+.carousel-content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+/* Carousel text section */
+.carousel-text1 {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.carousel-text1 h3 {
+  font-size: 18px;
+  color: #2a7188;
+  margin-bottom: 10px;
+}
+
+.carousel-text1 button {
+  background-color: transparent;
+  border: 1px solid rgb(93, 192, 224);
+  border-radius: 4px;
+  padding: 7px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-text1 button a {
+  text-decoration: none;
+  color: rgb(42, 113, 136);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-text1 button:hover {
+  background-color: #45a049; /* Button hover effect */
+}
+
+.carousel-text1 button:hover a {
+  color: white; /* Change link text color on hover */
+}
+
+.carousel-text1 button img {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+/* Image section */
+.carousel-image1 {
+  width: 100%;
+  height: 150px;
+}
+
+.carousel-image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .grid-item {
+    width: calc(33.33% - 20px); /* 3 items per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    width: calc(50% - 20px); /* 2 items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-item {
+    width: calc(100% - 20px); /* 1 item per row */
+  }
+}

@@ -89,19 +89,25 @@ a {
 
 /**/
 
-section {
-  min-height: 1000px;
-}
+/* .sectionall {
+  width: 100%;
+  background-color: black;
+} */
 
-.section-up {
+/* .section-up {
   background-color: rgb(201, 201, 201);
   display: flex;
   gap: 50px;
   padding: 0px 30px;
   margin-top: -50px;
+} */
+
+.section-up {
+  display: flex;
+  flex-direction: column;
 }
 
-.section-down {
+/* .section-down {
   background-color: lightblue;
   width: 100%;
   height: 400px;
@@ -109,6 +115,60 @@ section {
   display: flex;
   align-items: flex-end;
   padding: 30px;
+} */
+
+.section-down {
+  background-color: chocolate;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 50px 30px;
+  justify-content: space-around; /* Ensure content is spaced across */
+}
+
+/* Left Side: Image */
+.section-down img {
+  width: 40%; /* Adjust image size as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 10px; /* Optional: gives rounded corners */
+}
+
+/* Right Side: Text and Button */
+.text-content {
+  width: 50%; /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center text */
+  padding-left: 20px; /* Adds spacing between image and text */
+  color: white;
+}
+
+.text-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.get-informed-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-start; /* Align button to the start of the content */
+  text-transform: uppercase; /* Optional: makes text uppercase */
+}
+
+.get-informed-btn:hover {
+  background-color: #388e3c;
 }
 
 .image-text {
@@ -121,7 +181,7 @@ section {
   background-color: rgb(198, 169, 169);
 }
 
-article {
+/* article {
   background-color: lightblue;
   width: 100%;
   height: 600px;
@@ -153,7 +213,6 @@ article ul li {
   border: 1px solid rgb(93, 192, 224);
   border-radius: 8px;
   padding: 5px 0px;
-  /* box-shadow: 1px 1px 5px black; */
 }
 
 article ul li:hover {
@@ -169,7 +228,6 @@ article ul li img {
 article ul li button {
   display: inline-block;
   background-color: transparent;
-  /* background-color: #4caf50; */
   a {
     color: rgb(42, 113, 136);
   }
@@ -190,7 +248,7 @@ article ul li button:hover {
 article ul li button img {
   width: 10px;
   height: 10px;
-}
+} */
 
 /***
 
@@ -202,7 +260,7 @@ article ul li button img {
 
 .section2 {
   min-height: 700px;
-  background-color: lightblue;
+  background-color: chocolate;
   margin-top: -1px;
   display: flex;
   flex-direction: column;
@@ -227,10 +285,11 @@ article ul li button img {
 .support-form {
   display: flex;
   flex-direction: column;
-  border: 1px double rgb(85, 180, 212);
+  border: 1px double white;
   width: 75%;
   padding: 20px;
-  box-shadow: 5px 1px 10px rgb(94, 179, 207);
+  box-shadow: 1px 1px 5px white;
+  color: white;
 }
 
 .support-h1 {
@@ -250,9 +309,10 @@ article ul li button img {
 .support-form textarea {
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid blue;
+  border: 1px solid white;
   border-radius: 5px;
-  background-color: lightblue;
+  background-color: rgb(243, 217, 200);
+  outline: none;
 }
 
 .support-form button {

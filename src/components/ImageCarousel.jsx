@@ -32,12 +32,21 @@ function ImageCarousel() {
     <section className="image-div">
       <Slider {...settings}>
         {imageUrls.map((url, index) => (
-          <div key={index}>
+          <div key={index} className="carousel-slide">
             <img src={url} alt={`Slide ${index}`} className="carousel-image" />
-            <div className="image-text">{slideTexts[index]}</div>
           </div>
         ))}
       </Slider>
+
+      {/* Overlay that stays fixed on top of all carousel images */}
+      <div className="carousel-overlay">
+        <div className="carousel-content">
+          <p className="carousel-text">Welcome to our Help Center</p>
+          <button className="view-more-btn">
+            <a href="/">View More</a>
+          </button>
+        </div>
+      </div>
     </section>
   );
 }
