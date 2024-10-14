@@ -55,6 +55,20 @@ function Header() {
         </div>
       ),
     },
+
+    {
+      value: "lg",
+      label: (
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/800px-Flag_of_Uganda.svg.png
+"
+            alt="Dutch"
+            style={{ width: "20px", height: "15px" }}
+          />
+        </div>
+      ),
+    },
   ];
 
   return (

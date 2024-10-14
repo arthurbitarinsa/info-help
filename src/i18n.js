@@ -170,6 +170,69 @@ const resources = {
       social_text: `Betrokken raken bij sociale en culturele activiteiten is essentieel voor het opbouwen van connecties, het bevorderen van integratie en het verrijken van je leven. Hieronder staan enkele organisaties die mogelijk geschikt voor je zijn.`,
     },
   },
+
+  lg: {
+    translation: {
+      Get_informed: "Weeweereddwa!",
+      message: "Tereka obubaka",
+      name: "Erinnya",
+      email: "Ekitandikirwako",
+      subject: "Ekituufu",
+      message_placeholder: "Obubaka",
+      submit: "Kola",
+      sending: "Okugeza...",
+      more: "Ekitonotono",
+      Medication: "Enkozesa z’eddagala",
+      Food: "Emmere",
+      Accomodation: "Eky’okuba",
+      Hygiene: "Obulamu",
+      Legal_safety: "Ebikwata ku mateeka n’emyaka",
+      More: "Ekitonotono",
+      Language_learning: "Amateeka g’obulimi",
+      Psychological_help: "Ekirungi mu kwegatta",
+      Education: "Ekitongole",
+      Scolarships: "Bbeeyi za ssente",
+      Social_activities: "Ekitongoleddwa ne bigambo",
+      Sports: "Amateeka",
+      english: "Oluganda",
+      french: "Ofransa",
+      dedicated_message:
+        "Tuli wano okuweerera mu kwetegereza eby'enfuna ebiri mu kitundu kyo. Oba ogenda mu maaso n’okuwa obuyambi, okufuna ekirungi oba okugezaako okumala ennyo, tukola ebirungi ku nkyukakyuka. Tukoze nti obulungi buyamba wansi w'ebikozesebwa ebisobola okukuyamba. Ffe tusuubira okukuyamba mu kwebakaamu.",
+      guiding_message:
+        "Mu nkumbi zonna, obuyambi bulina, Lwaki okuba ogumanyi. N’ebiwundu ebisanyizo n’ekitiibwa, Tuzzeeko abantu abaakola enfuufu.",
+      Check_Locations: "Weyanjula Ku nsi",
+      about_us: "Ebyaffe",
+      Terms: "Amateeka n’okwewandiisa",
+      Feedback: "Obubaka n’okusaba",
+      rigths: "Ebikulu byonna byakusaba",
+      locations_here: "Ebyalo Ebirina wano",
+      More_here: "Ekitonotono kino",
+      head_medication: "ENKOZESA Z’EDDAGALA / OKUKOLA NE BIKA",
+      medication_text: `Enkozesa z’eddagala oba okufuna okwekitibwa ku muwendo w’abasawo ekisobola okwongera omubiri. Tusabe wano buli omu ekirikuteko. Ekitongole kyona kikwatako ekiraga nti omusajja oba mukazi na bika eby'enfuna ebitongoleddwa by’amaanyi nnyo. Ebikyukakyuka ku nsi bino, tuzzeeko abakozi ababadde bakola bye bigambi. Kumpi ne Ebibiri. Nnina omulundi gw’okusaba.`,
+      visite: "Yokasamu",
+      head_food: "EMMERE / EMIRIMU",
+      food_text: `Ku nsi yonna, okusaba ennyo okusobola okufuna emmere kulina mu mbeera. Wano ogenda kyennuma. Tekyambula okukuba ebikozesebwa mu nsi. Nkola obulungi, tukyalina owemu okufuna bye bigami  kubeera ku mbeera.`,
+      accomodation: "EKY’OKUBA",
+      accomodation_text: `Okufuna ekifo kyo, kirina okubaawo okuli wano ku nsike. Tuli okubeera naye tuky’aba kimu. Omunne omusanyizo kibi ekiraga ba kyogerako, nga tukola bisobola okwongera ennyo kubo.`,
+
+      hygiene: `Okukola ebirungi eby’amaanyi eby’ekikolwa kya osobola okwongera. Tusaba ku nsi buli ky’okufuna, omuntu yayamba okulaba ku mbeera y’okufunayo.`,
+
+      legal_head: "EKIFAMIRE / EDDALA",
+      legal_text: `Tubade mu maaso ku bisobola okuguma wansi. Ffena twetegese okwefumira okutuusa kuggwa.`,
+
+      lang_head: "Ebyo Oluganda",
+      lang_text: `Tusaba okunyumirra mu Bikozesebwa Byaffe. Gwe tusaba okwebakubira, tukola besigama.`,
+
+      psy_head: "OKULIMBA KWA KOLERO",
+      psy_text: `Okulumya kwamu kumutima ate okwongera kw'etontowolero kumwanikibwa z’obusobozi butawaandaye n’obulamu bwateekateeka.`,
+
+      scola_head: "Ebiraga Ku Bbeeyi Za Ssente",
+      scola_text: `Kampuni z’amaddugavu obusaba okubika ebiraga ku nsi z’ebikozesebwa.`,
+
+      social_head: "EBIRAGI EZIRINA OBUKULU",
+      social_text: `Kiki tusaba okukola ebikozesebwa, tusaba ku nkola eyatandika ebiwundu.`,
+    },
+  },
 };
 
 i18n.use(initReactI18next).init({
