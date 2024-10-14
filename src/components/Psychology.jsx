@@ -2,25 +2,20 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../css/psychology.css";
-
-import clinicImg from "../images/help1.avif";
-import galileeImg from "../images/help1.avif";
-import santeImg from "../images/help1.avif";
+import { useTranslation } from "react-i18next";
 
 function Psychology() {
+  const { t } = useTranslation();
   return (
-    <>         
+    <>
       <Header />
       <div className="container">
         <div>
           <div>
-            <h2>MENTAL HEALTH</h2>
+            <h2>{t("psy_head")}</h2>
             <br />
             <i>
-              Psycological support is a vital part of mental health and treatment that very many people tend to ignore
-              <br /> yet very important for personal development and helpful to get your brain set to pursue other goals 
-              <br /> despite of a disturbing mental state. Below is a list of organisations offering this useful service <br />
-              free of charge
+              {t("psy_text")} <br /> <br />
             </i>
           </div>
         </div>
@@ -35,12 +30,12 @@ function Psychology() {
             <div className="article-details">
               <h3>Ulysse</h3>
               <p>
-                Addresss - Rue de l'Ermitage 52 Bruxelles<br />
-                Email -  accueil@ulysse-ssm.be <br />
+                Addresss - Rue de l'Ermitage 52 Bruxelles
+                <br />
+                Email - accueil@ulysse-ssm.be <br />
                 Open - Monday-Friday from 9:00 a.m - 5:00 p.m <br />
                 Telephone: +32 2 533 06 70
                 <br />
-
               </p>
               <a
                 href="https://www.ulysse-ssm.be/contact"
@@ -48,7 +43,7 @@ function Psychology() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -62,7 +57,7 @@ function Psychology() {
             <div className="article-details">
               <h3>PAG-ASA</h3>
               <p>
-                Address - Rue des Alexiens 16b  Brussels <br />
+                Address - Rue des Alexiens 16b Brussels <br />
                 Email - info@pag-asa.be <br />
                 Open - Monday-Friday from 9:00 a.m - 5p.m <br />
                 Telephone: 02 511 64 64 <br />
@@ -74,12 +69,10 @@ function Psychology() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
-
-          
         </div>
       </div>
       <Footer />

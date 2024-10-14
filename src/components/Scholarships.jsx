@@ -2,24 +2,20 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import "../css/scholarships.css";
-
-import clinicImg from "../images/help1.avif";
-import galileeImg from "../images/help1.avif";
-import santeImg from "../images/help1.avif";
+import { useTranslation } from "react-i18next";
 
 function Scholarships() {
+  const { t } = useTranslation();
   return (
     <>
       <Header />
       <div className="container">
         <div>
           <div>
-            <h2> SCHOLARSHIPS</h2>
+            <h2> {t("scola_head")}</h2>
             <br />
             <i>
-              Scholarships always come as a burden reliever and so important to pursue higher studies, below <br />
-              are some of higher institutions that have Refugee scholarship programs, <br />
-              reach out to find out more about eligibility
+              {t("scola_text")}
               <br />
               <br />
             </i>
@@ -39,8 +35,7 @@ function Scholarships() {
                 Address -Stadscampus Kleine Kauwenberg 122000 Antwerpen <br />
                 Email - prepyear@linguapolis.be <br />
                 Telephone: 02 512 13 14 (By appointment only) <br />
-                18-25 years,  visit website for more details
-
+                18-25 years, visit website for more details
                 <br />
               </p>
               <a
@@ -49,13 +44,10 @@ function Scholarships() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
-
-          
-          
         </div>
       </div>
 

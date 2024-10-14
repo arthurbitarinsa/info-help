@@ -2,19 +2,11 @@ import React, { useRef, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { useTranslation } from "react-i18next";
- 
+
 import "../css/food.css";
 
-import clinicImg from "../images/help1.avif";
-import galileeImg from "../images/help1.avif";
-import santeImg from "../images/help1.avif";
-
 function Food() {
-
   const { t } = useTranslation();
-//  const [lang, setlang] =  useState("en");
-
-//  useRef()
 
   return (
     <>
@@ -22,14 +14,10 @@ function Food() {
       <div className="container">
         <div>
           <div>
-             <h2>FOOD / FEEDING </h2>
-            {/* <h2>{t("food")}</h2> */}
+            <h2>{t("head_food")} </h2>
             <br />
             <i>
-              Imagine the unimaginable adverse effects of Lack of Food !!, As a
-              new comer this can be an issue for, the first days <br />
-              or even months Below you find a List of Locations you can go and
-              get a free Hot meal.
+              {t("food_text")}
               <br />
               <br />
             </i>
@@ -59,7 +47,7 @@ function Food() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -83,7 +71,7 @@ function Food() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -106,12 +94,10 @@ function Food() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
-
-          
 
           <div className="article">
             <img
@@ -122,9 +108,9 @@ function Food() {
             <div className="article-details">
               <h3> The Social Food Truck (ADRA) </h3>
               <p>
-                Distribution of Food every Friday afternoon<br />
+                Distribution of Food every Friday afternoon
+                <br />
                 Address : Gare Du Midi (Esplanade) <br />
-                
                 Distribution Time : 13h - 16h
               </p>
               <a
@@ -133,13 +119,10 @@ function Food() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
-
-        
-
         </div>
       </div>
 

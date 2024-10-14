@@ -2,23 +2,20 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../css/language.css";
-
-import clinicImg from "../images/help1.avif";
-import galileeImg from "../images/help1.avif";
-import santeImg from "../images/help1.avif";
+import { useTranslation } from "react-i18next";
 
 function Language() {
+  const { t } = useTranslation();
   return (
     <>
       <Header />
       <div className="container">
         <div>
           <div>
-            <h2>LANGUAGE</h2>
+            <h2>{t("lang_head")}</h2>
             <br />
             <i>
-            Discover the world of language learning with this comprehesive page. Find information on free language classes, online platforms, and language exchange opportunities. Whether you're interested in 
-            French, Dutch or English, below are some  resources to start your journey."
+              {t("lang_text")}
               <br />
               <br />
             </i>
@@ -35,11 +32,10 @@ function Language() {
             <div className="article-details">
               <h3>L’École Maximilien</h3>
               <p>
-                Languages taught - French, Dutch, English
-                Address - 402 avenue Van Volxem à 1190 Forest <br />
-                New Address from June 2025 to be communicated
-                Open - Monday-Friday from 11:00a.m - 16:00 p.m <br />
-                
+                Languages taught - French, Dutch, English Address - 402 avenue
+                Van Volxem à 1190 Forest <br />
+                New Address from June 2025 to be communicated Open -
+                Monday-Friday from 11:00a.m - 16:00 p.m <br />
                 <br />
               </p>
               <a
@@ -48,7 +44,7 @@ function Language() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Blog
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -62,7 +58,8 @@ function Language() {
             <div className="article-details">
               <h3>Lire et Ecrire Bruxelles</h3>
               <p>
-                Address - rue de la Borne 14 bte 9 1080 Bruxelles, Belgique <br />
+                Address - rue de la Borne 14 bte 9 1080 Bruxelles, Belgique{" "}
+                <br />
                 Telephone: 02 412 56 10 <br />
                 Fax : 02 412 56 11 <br />
                 Email: bruxelles@lire-et-ecrire.be
@@ -73,7 +70,7 @@ function Language() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -85,14 +82,14 @@ function Language() {
               className="article-img"
             />
             <div className="article-details">
-              <h3>BRULINGUA (ONLINE) 
-              </h3>
+              <h3>BRULINGUA (ONLINE)</h3>
               <p>
-                This is to be accessed online on this Link "https://brulingua.be/fr/"<br />
-                You must be registered on actris<br />
+                This is to be accessed online on this Link
+                "https://brulingua.be/fr/"
+                <br />
+                You must be registered on actris
+                <br />
                 Languages: French, Dutch, English, German
-                
-               
               </p>
               <a
                 href="https://brulingua.be/fr/"
@@ -100,7 +97,7 @@ function Language() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -116,8 +113,9 @@ function Language() {
               <p>
                 Initiative by Serve the City <br />
                 Days; Tuesday at Rue Belliard ,Time: 17:15-19:00 <br />
-                      Saturday & Sunday at the HUB  Av. du Port 94/100, Time:  13:00 - 15:00 <br />
-                      Telephone: +32 2 734 35 02 (Serve the City)
+                Saturday & Sunday at the HUB Av. du Port 94/100, Time: 13:00 -
+                15:00 <br />
+                Telephone: +32 2 734 35 02 (Serve the City)
               </p>
               <a
                 href="https://www.servethecity.brussels/projects/english-4-refugees/"
@@ -125,7 +123,7 @@ function Language() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -139,10 +137,9 @@ function Language() {
             <div className="article-details">
               <h3>OpenLearn</h3>
               <p>
-              Free online courses for refugees <br />
-              Find Online English Courses free of Charge <br />
-              Visit Websitr for more information 
-                
+                Free online courses for refugees <br />
+                Find Online English Courses free of Charge <br />
+                Visit Websitr for more information
               </p>
               <a
                 href="https://www.open.edu/openlearn/society-politics-law/resources-refugees"
@@ -150,7 +147,7 @@ function Language() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -164,7 +161,8 @@ function Language() {
             <div className="article-details">
               <h3>Lire et Ecrire Bruxelles</h3>
               <p>
-                Address - rue de la Borne 14 bte 9 1080 Bruxelles, Belgique <br />
+                Address - rue de la Borne 14 bte 9 1080 Bruxelles, Belgique{" "}
+                <br />
                 Telephone: 02 412 56 10 <br />
                 Fax : 02 412 56 11 <br />
                 Email: bruxelles@lire-et-ecrire.be
@@ -175,7 +173,7 @@ function Language() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>

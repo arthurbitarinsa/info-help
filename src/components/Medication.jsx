@@ -2,30 +2,20 @@ import React from "react";
 import "../css/medication.css";
 import Header from "./Header";
 import Footer from "./Footer";
-
-import clinicImg from "../images/help1.avif";
-import galileeImg from "../images/help1.avif";
-import santeImg from "../images/help1.avif";
+import { useTranslation } from "react-i18next";
 
 function Medication() {
+  const { t } = useTranslation();
   return (
     <>
       <Header />
       <div className="container">
         <div>
           <div>
-            <h2>MEDICATION / DOCTOR / HEALTH</h2>
+            <h2>{t("head_medication")}</h2>
             <br />
             <i>
-              Medication or being able to see a doctor is a basic need and
-              essential for every life. For new arrivals in Brussels, this gets
-              so complicated. Medication is a Fundamental Human right and for
-              all those seeking International Protection, present to Public
-              Hospital your Annex 26, this acts as your identity card and the
-              billing information will automatically be sent to Fedasil. For the
-              other NGO Medical Centre, you are advised to carry your annex Form
-              too. Below are a list of Public Hospitals, Free clinics that you
-              can seek Medical Support.
+              {t("medication_text")}
               <br />
               <br />
             </i>
@@ -33,8 +23,7 @@ function Medication() {
         </div>
 
         <div>
-
-        <div className="article">
+          <div className="article">
             <img
               src="https://img.static-fb.com/images/media/601ECA7A-86A1-42AE-B8F75275466B6678/"
               alt="Maison Médicale Galilée"
@@ -53,11 +42,10 @@ function Medication() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
-
 
           <div className="article">
             <img
@@ -70,7 +58,7 @@ function Medication() {
               <p>
                 Address - chau.de Wvre 154/a, 1050 ixelles <br />
                 Open - Monday-Friday from 8:45 a.m - 6:30 p.m <br />
-                Telephone: 02 512 13 14 (Recommended to Call for appointment){" "}
+                Telephone: 02 512 13 14 (Recommended to Call for appointment)
                 <br />
               </p>
               <a
@@ -79,7 +67,7 @@ function Medication() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -103,7 +91,7 @@ function Medication() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -127,7 +115,7 @@ function Medication() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -141,12 +129,10 @@ function Medication() {
             <div className="article-details">
               <h3>La Fontaine Bruxelles</h3>
               <p>
-                Strictly by appointment
-                Address : rue Haute 346, 1000 <br />
+                Strictly by appointment Address : rue Haute 346, 1000 <br />
                 Email: lfb@ordmalt.be <br />
                 Contact : +3225100910 <br />
-                Open : Monday -Friday
-                Time :  9h -12h and 13h - 16h
+                Open : Monday -Friday Time : 9h -12h and 13h - 16h
               </p>
               <a
                 href="https://lesmarolles.be/Organization/la-fontaine-bruxelles/"
@@ -154,12 +140,10 @@ function Medication() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
-
-         
         </div>
       </div>
 

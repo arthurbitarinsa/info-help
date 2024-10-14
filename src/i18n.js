@@ -38,6 +38,56 @@ const resources = {
       rigths: "all rigths reserved",
       locations_here: "locations here",
       More_here: "More here",
+      head_medication: "MEDICATION / DOCTOR / HEALTH",
+      medication_text: `Medication or being able to see a doctor is a basic need and
+              essential for every life. For new arrivals in Brussels, this gets
+              so complicated. Medication is a Fundamental Human right and for
+              all those seeking International Protection, present to Public
+              Hospital your Annex 26, this acts as your identity card and the
+              billing information will automatically be sent to Fedasil. For the
+              other NGO Medical Centre, you are advised to carry your annex Form
+              too. Below are a list of Public Hospitals, Free clinics that you
+              can seek Medical Support.`,
+      visite: "Visit Website",
+      head_food: "FOOD / FEEDING",
+      food_text: `Imagine the unimaginable adverse effects of Lack of Food !!, As a
+              new comer this can be an issue for, the first days 
+              or even months Below you find a List of Locations you can go and
+              get a free Hot meal.`,
+      accomodation: "ACCOMODATION",
+      accomodation_text: ` Finding a safe place can be challenging, especially when resources
+              are limited. This page connects you with the best available free
+              organizations and resources that can help you find some solutions.`,
+      hygiene: ` Maintaining good hygiene is essential for your health and well-being. This hygiene page provides
+             information and resources to help you access essential hygiene products and services
+              `,
+      legal_head: " Legal Support / Lawyer ",
+      legal_text: `It is key to have legal information about your situation and
+              everyone deserves a right to be heard and represented 
+              by a Lawyer. You can find below Organisations where they can offer
+              Legal advise or link you directly to a Lawyer freely.`,
+      lang_head: "LANGUAGE",
+      lang_text: ` Discover the world of language learning with this comprehesive
+              page. Find information on free language classes, online platforms,
+              and language exchange opportunities. Whether you're interested in
+              French, Dutch or English, below are some resources to start your
+              journey."`,
+      psy_head: "MENTAL HEALTH",
+
+      psy_text: `Psycological support is a vital part of mental health and
+              treatment that very many people tend to ignore
+             yet very important for personal development and helpful to
+              get your brain set to pursue other goals
+           despite of a disturbing mental state. Below is a list of
+              organisations offering this useful service 
+              free of charge `,
+      scola_head: " SCHOLARSHIPS",
+      scola_text: `Scholarships always come as a burden reliever and so important to pursue higher studies, below
+are some of higher institutions that have Refugee scholarship programs,
+reach out to find out more about eligibility`,
+      social_head: " SOCIAL AND CULTURE SERVICES",
+      social_text: `Engaging in social and cultural activities is essential for building connections, fostering integration, and enriching your life. Below are some of the organisations that may be suitable for this, dont miss out on the opportunity to intergrate in the society
+`,
     },
   },
   fr: {
@@ -76,6 +126,27 @@ const resources = {
       rigths: " tous droits réservés",
       locations_here: "Emplacements ici",
       More_here: "Plus ici",
+      head_medication: "MEDICATION / MEDECIN / SANTÉ",
+      medication_text: `Médicaments ou la possibilité de consulter un médecin est un besoin fondamental et essentiel pour chaque vie. Pour les nouveaux arrivants à Bruxelles, cela devient très compliqué. Les médicaments sont un droit humain fondamental et pour tous ceux qui demandent une protection internationale, présentez votre Annexe 26 à l’hôpital public. Celle-ci fait office de carte d’identité et les informations de facturation seront automatiquement envoyées à Fedasil. Pour les autres centres médicaux d’ONG, il est également conseillé d’apporter votre formulaire Annexe. Vous trouverez ci-dessous une liste des hôpitaux publics et des cliniques gratuites où vous pouvez demander un soutien médical.`,
+      visite: "Visiter le site",
+      head_food: "NOURRITURE / ALIMENTATION",
+      food_text: `Imaginez les effets néfastes inimaginables du manque de nourriture !!
+En tant que nouveau venu, cela peut être un problème pour vous, durant les premiers jours ou même les premiers mois.
+Ci-dessous, vous trouverez une liste d'endroits où vous pouvez aller et obtenir un repas chaud gratuit.`,
+      accomodation: "HÉBERGEMENT",
+      accomodation_text: `Trouver un endroit sûr peut être un défi, surtout lorsque les ressources sont limitées. Cette page vous met en contact avec les meilleures organisations gratuites et ressources disponibles qui peuvent vous aider à trouver des solutions.`,
+      hygiene: ` Maintenir une bonne hygiène est essentiel pour la santé et le bien-être, mais cela peut devenir un défi sans accès aux ressources appropriées. Cette section vous oriente vers des endroits où vous pouvez trouver des produits d’hygiène gratuits ou des installations pour vous laver et prendre soin de vous.
+              `,
+      legal_head: "SOUTIEN JURIDIQUE / AVOCAT",
+      legal_text: `Il est essentiel d'avoir des informations juridiques sur votre situation, et chacun mérite d'être entendu et représenté par un avocat. Vous trouverez ci-dessous des organisations qui peuvent vous offrir des conseils juridiques ou vous mettre directement en contact avec un avocat gratuitement.`,
+      lang_head: "LANGUE",
+      lang_text: `Découvrez le monde de l'apprentissage des langues avec cette page complète. Trouvez des informations sur les cours de langues gratuits, les plateformes en ligne et les opportunités d'échange linguistique. Que vous soyez intéressé par le français, le néerlandais ou l'anglais, voici quelques ressources pour commencer votre parcours.`,
+      psy_head: "SANTÉ MENTALE",
+      psy_text: `Le soutien psychologique est une partie vitale de la santé mentale et du traitement que beaucoup de gens ont tendance à ignorer,  mais il est très important pour le développement personnel et utile pour aider à recentrer votre esprit sur d'autres objectifs, malgré un état mental perturbé. Ci-dessous, une liste d'organisations offrant ce service utile gratuitement.`,
+      scola_head: "BOURSES D'ÉTUDES",
+      scola_text: `Les bourses d'études sont toujours une aide précieuse et jouent un rôle clé dans la poursuite des études supérieures. Ci-dessous, vous trouverez quelques établissements d'enseignement supérieur proposant des programmes de bourses pour les réfugiés. N'hésitez pas à les contacter pour en savoir plus sur les critères d'éligibilité.`,
+      social_head: "SERVICES SOCIAUX ET CULTURELS",
+      social_text: `S'engager dans des activités sociales et culturelles est essentiel pour créer des liens, favoriser l'intégration et enrichir votre vie. Voici quelques organisations qui pourraient vous convenir. Ne manquez pas l'opportunité de vous intégrer dans la société.`,
     },
   },
 };

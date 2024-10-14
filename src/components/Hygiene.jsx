@@ -1,13 +1,11 @@
-import React from "react";
+import React, { useTransition } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../css/hygiene.css";
-
-import clinicImg from "../images/help1.avif";
-import galileeImg from "../images/help1.avif";
-import santeImg from "../images/help1.avif";
+import { useTranslation } from "react-i18next";
 
 function Hygiene() {
+  const { t } = useTranslation();
   return (
     <>
       <Header />
@@ -17,8 +15,7 @@ function Hygiene() {
             <h2>HYGIENE</h2>
             <br />
             <i>
-            Maintaining good hygiene is essential for your health and well-being. This hygiene page provides
-             information and resources to help you access essential hygiene products and services
+              {t("hygiene")}
               <br />
               <br />
             </i>
@@ -27,7 +24,7 @@ function Hygiene() {
 
         <div>
           <div className="article">
-          <img
+            <img
               src="https://doucheflux.be/wp-content/uploads/2023/06/capture-decran-2023-06-20-a-21.06.53-e1687288099256-279x300.png"
               alt="DoucheFlux"
               className="article-img"
@@ -46,14 +43,14 @@ function Hygiene() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
 
           <div className="article">
             <img
-              src= "https://lesmarolles.be/wp-content/uploads/2021/01/cropped-cropped-logo-marolles-1.png"
+              src="https://lesmarolles.be/wp-content/uploads/2021/01/cropped-cropped-logo-marolles-1.png"
               alt="Maison Médicale Galilée"
               className="article-img"
             />
@@ -70,7 +67,7 @@ function Hygiene() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
@@ -94,7 +91,7 @@ function Hygiene() {
                 rel="noopener noreferrer"
                 className="article-button"
               >
-                Visit Website
+                {t("visite")}
               </a>
             </div>
           </div>
