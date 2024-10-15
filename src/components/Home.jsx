@@ -91,10 +91,9 @@ function Home() {
             <p>
               <i>{t("dedicated_message")} </i>
             </p>
-            <button className="get-informed-btn">Get Informed</button>
+            <button className="get-informed-btn">{t("Get_informed")}</button>
           </div>
         </div>
-        <div className="hr"></div>
         <ArticleCarroussel />
         <Testimonial />
       </section>

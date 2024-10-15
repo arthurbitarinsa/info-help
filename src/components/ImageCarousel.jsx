@@ -8,6 +8,7 @@ import img1 from "../images/help1.avif";
 import img2 from "../images/help2.jpg";
 import img3 from "../images/help3.webp";
 import img4 from "../images/help4.jpg";
+import { useTranslation } from "react-i18next";
 
 const imageUrls = [img1, img2, img3, img4];
 const slideTexts = [
@@ -18,6 +19,7 @@ const slideTexts = [
 ];
 
 function ImageCarousel() {
+  const { t } = useTranslation();
   const settings = {
     dots: true,
     infinite: true,
@@ -41,9 +43,9 @@ function ImageCarousel() {
       {/* Overlay that stays fixed on top of all carousel images */}
       <div className="carousel-overlay">
         <div className="carousel-content">
-          <p className="carousel-text">Welcome to our Help Center</p>
+          <p className="carousel-text">{t("view_more_text")}</p>
           <button className="view-more-btn">
-            <Link to="/medication">View More</Link>
+            <Link to="/medication">{t("view_more")}</Link>
           </button>
         </div>
       </div>
