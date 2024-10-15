@@ -180,7 +180,7 @@ function Header() {
           <button className="dropbtn">{t("More")}</button>
           <div className="dropdown-content">
             <a>
-              <Link to="/language">{t("Language_learning")}</Link>
+              <Link to="/language">{t("language")}</Link>
             </a>
             <a>
               <Link to="/psychology">{t("Psychological_help")}</Link>
