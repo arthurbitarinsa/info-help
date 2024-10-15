@@ -21,7 +21,7 @@ function ArticleCarroussel() {
     {
       title: "Accommodation",
       img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/fc/9a/b2/appartamento-deluxe-with-balcony-.jpg?w=700&h=-1&s=1",
-      link: "/accommodation",
+      link: "/accomodation",
     },
     {
       title: "Hygiene",
