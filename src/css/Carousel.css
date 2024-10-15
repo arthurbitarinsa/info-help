@@ -43,7 +43,6 @@
   justify-content: center;
   align-items: center;
   z-index: 1; /* Ensures it's above the slider */
-  pointer-events: none; /* Prevents overlay from blocking slide navigation */
 }
 
 .carousel-content {
@@ -72,15 +71,11 @@
   border: none;
   border-radius: 5px;
   font-size: 16px;
-}
-
-.view-more-btn a {
-  color: white;
   cursor: pointer;
 }
 
 .view-more-btn :hover {
-  background-color: #388e3c;
+  color: white;
 }
 
 /* Slick Dots and custom paging for the dots inside carousel */

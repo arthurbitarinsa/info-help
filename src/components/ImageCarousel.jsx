@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../css/Carousel.css";
-
+import { Link } from "react-router-dom";
 import img1 from "../images/help1.avif";
 import img2 from "../images/help2.jpg";
 import img3 from "../images/help3.webp";
@@ -43,7 +43,7 @@ function ImageCarousel() {
         <div className="carousel-content">
           <p className="carousel-text">Welcome to our Help Center</p>
           <button className="view-more-btn">
-            <a href="/">View More</a>
+            <Link to="/medication">View More</Link>
           </button>
         </div>
       </div>

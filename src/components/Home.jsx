@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../css/home.css";
-import { Link } from "react-router-dom";
 import ImageCarousel from "./ImageCarousel";
-import arrow from "../images/next_190571.png";
 import Header from "./Header";
 import Footer from "./Footer";
 import emailjs from "emailjs-com";
