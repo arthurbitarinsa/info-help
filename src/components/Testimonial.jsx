@@ -3,26 +3,29 @@ import "../css/testimonial.css";
 
 // Placeholder images
 const testimonialImage1 =
-  "https://media.istockphoto.com/id/2099403180/fr/photo/jeune-femme-daffaires-rieuse-debout-avec-ses-bras-crois%C3%A9s-contre-un-mur-de-bureau.jpg?s=1024x1024&w=is&k=20&c=MrBivLJMratWElx4iBN-g5WtLcHrG6Vgi3W8GtdeJ_o=";
+  "https://www.creativefabrica.com/wp-content/uploads/2022/10/25/Person-icon-Graphics-43204353-1.jpg";
 const testimonialImage2 =
-  "https://media.istockphoto.com/id/2101794935/fr/photo/portrait-of-a-woman-smiling-in-front-of-a-white-wall.jpg?s=1024x1024&w=is&k=20&c=ab426BLwG4sl_9B3v3UINOyx4M-yXH5kE5kuI1v7zuQ=";
+"https://www.creativefabrica.com/wp-content/uploads/2022/10/25/Person-icon-Graphics-43204353-1.jpg";
 const testimonialImage3 =
-  "https://media.istockphoto.com/id/857924958/fr/photo/cool-jeune-femme-noire-souriant-contre-le-mur-blanc.jpg?s=1024x1024&w=is&k=20&c=IypFuzF-qDvlDghmEqJ5EYgaVlscSs94bIJtkUsuqcY=";
+"https://www.creativefabrica.com/wp-content/uploads/2022/10/25/Person-icon-Graphics-43204353-1.jpg";
 
 const testimonialsData = [
   {
-    name: "Jane Marceline",
-    text: "Thanks to the services provided, I was able to get the help I needed quickly and efficiently. Highly recommend!",
+    name: "",
+    // text: "Thanks to the services provided, I was able to get the help I needed quickly and efficiently. Highly recommend!",
+    text:"Coming soon",
     img: testimonialImage1,
   },
   {
-    name: "Ornelia Mokesa",
-    text: "The team was super supportive and the information I got was life-changing. Thank you!",
+    name: " ",
+    // text: "The team was super supportive and the information I got was life-changing. Thank you!",
+    text:"",
     img: testimonialImage2,
   },
   {
-    name: "Judith smith",
-    text: "I couldn't have asked for better guidance. Their help was just what I needed.",
+    name: "",
+    // text: "I couldn't have asked for better guidance. Their help was just what I needed.",
+    text:"Coming soon",
     img: testimonialImage3,
   },
 ];

@@ -41,20 +41,34 @@ function ArticleCarroussel() {
     {
       title: "Psychological Help",
       img: "https://www.open.edu.au/-/media/blog/2022/02-february/counseller-vs-psychologist.jpg?h=583&iar=0&w=715&rev=512145ae285b477ca8b74b09c9b9784b&hash=DC8EFD2462F9FC1C60EB86BA38F5CC89",
-      link: "/psychological-help",
+      link: "/psychology",
     },
 
     {
       title: "Social Activities",
       img: "https://www.unicef.org/careers/sites/unicef.org.careers/files/styles/two_column/public/Priscilla%20Idele3.jpg.webp?itok=IYiHvGx2",
-      link: "/social-activities",
+      link: "/social",
     },
 
     {
-      title: "More",
-      img: "https://pbs.twimg.com/profile_images/558750489152458752/pBBTFL0j_400x400.png",
-      link: "/more",
+      title: "Education",
+      img: "https://th.bing.com/th/id/R.ab0d260a9031680c4639363c9f78bfe7?rik=GkH6xOGQIXiFpw&riu=http%3a%2f%2fampletrails.com%2fwp-content%2fuploads%2f2011%2f10%2fhigher-education.png&ehk=Z%2bS3vg3b10UhHzXTFROlz5Kwa619X9w%2bqj6tl2nvyH0%3d&risl=&pid=ImgRaw&r=0",
+      link: "/education",
     },
+
+    {
+      title: "Scholarships",
+      img: "https://public-files.gumroad.com/vl2wpw9ufrospg2h8k51d5j9i1hl",
+      link: "/scolarships",
+    },
+
+    {
+      title: "Sports",
+      img: "https://th.bing.com/th/id/R.276468ac7bc7e6b5f2459a499104a478?rik=3c7C4z%2flMz50Ww&pid=ImgRaw&r=0",
+      link: "/sports",
+    },
+
+   
   ];
 
   return (

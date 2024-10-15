@@ -80,7 +80,7 @@ function Home() {
     };
 
     emailjs
-      .send("service_oaq5fhn", "template_abcb0dc", data, "b4j_WJ11JcUJkySWD")
+      .send("service_aaugfif", "template_l0pqac4", data, "Nf26RqiFHwaDuc0ni")
       .then(
         (response) => {
           console.log("Message sent successfully : ", response);
