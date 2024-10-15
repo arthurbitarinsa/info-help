@@ -379,3 +379,25 @@ footer {
 .footer-icons i:hover {
   color: orange;
 }
+
+.testimonial-wrapper {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show-testimonial {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial-wrapper1 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show-testimonial1 {
+  opacity: 1;
+  transform: translateY(0);
+}

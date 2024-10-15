@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../css/home.css";
 import ImageCarousel from "./ImageCarousel";
 import Header from "./Header";
@@ -21,6 +21,32 @@ function Home() {
 
   const [submissionStatus, setSubmissionStatus] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [showTestimonial, setShowTestimonial] = useState(false); // State to track testimonial visibility
+  const testimonialRef = useRef(); // Ref for the Testimonial
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setShowTestimonial(true); // Show testimonial when it enters the view
+          }
+        });
+      },
+      { threshold: 0.3 } // Trigger when 30% of the component is visible
+    );
+
+    if (testimonialRef.current) {
+      observer.observe(testimonialRef.current);
+    }
+
+    return () => {
+      if (testimonialRef.current) {
+        observer.unobserve(testimonialRef.current);
+      }
+    };
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -81,6 +107,8 @@ function Home() {
   return (
     <>
       <Header />
+
+      {/* Regular content */}
       <section className="sectionall">
         <div className="section-up">
           <ImageCarousel />
@@ -95,7 +123,16 @@ function Home() {
           </div>
         </div>
         <ArticleCarroussel />
-        <Testimonial />
+      </section>
+
+      <section className="testimonial-section" ref={testimonialRef}>
+        <div
+          className={`testimonial-wrapper ${
+            showTestimonial ? "show-testimonial" : ""
+          }`}
+        >
+          <Testimonial />
+        </div>
       </section>
 
       <section className="section2">
