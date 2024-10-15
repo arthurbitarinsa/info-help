@@ -31,7 +31,7 @@ function ArticleCarroussel() {
     {
       title: "Legal & Safety",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8TcJEmxVvHEQ2P35-m8ro-WsBLEqtG49o3A&s",
-      link: "/legal-safety",
+      link: "/legal&safety",
     },
     {
       title: "Language Learning",
