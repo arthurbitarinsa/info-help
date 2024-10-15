@@ -7,6 +7,7 @@ import emailjs from "emailjs-com";
 import { useTranslation } from "react-i18next";
 import logo from "../images/Helplogo.png";
 import ArticleCarroussel from "./ArticleCarroussel";
+import Testimonial from "./Testimonial";
 
 function Home() {
   const { t } = useTranslation();
@@ -95,6 +96,7 @@ function Home() {
         </div>
         <div className="hr"></div>
         <ArticleCarroussel />
+        <Testimonial />
       </section>
 
       <section className="section2">

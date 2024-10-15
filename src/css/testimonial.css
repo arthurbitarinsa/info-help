@@ -1,0 +1,114 @@
+.testimonials-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+h2 {
+  color: #2a7188;
+  margin-bottom: 20px;
+}
+
+.testimonials-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.testimonial-slide {
+  flex: 0 0 70%; /* Controls how wide the testimonials display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.testimonial:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+h3 {
+  color: #333;
+  margin-top: 10px;
+}
+
+p {
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Slider buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(42, 113, 136, 0.8);
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #2a7188;
+}
+
+.prev {
+  left: -50px; /* Positions the left arrow */
+}
+
+.next {
+  right: -50px; /* Positions the right arrow */
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .testimonials-slider {
+    flex-direction: column;
+  }
+
+  .prev,
+  .next {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .testimonial-slide {
+    width: 100%;
+  }
+
+  .testimonial {
+    padding: 15px;
+  }
+
+  .testimonial-img {
+    width: 80px;
+    height: 80px;
+  }
+}
