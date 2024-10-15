@@ -8,7 +8,7 @@ header {
   justify-content: center;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 10;
 }
 
 .logo {
@@ -89,33 +89,10 @@ a {
 
 /**/
 
-/* .sectionall {
-  width: 100%;
-  background-color: black;
-} */
-
-/* .section-up {
-  background-color: rgb(201, 201, 201);
-  display: flex;
-  gap: 50px;
-  padding: 0px 30px;
-  margin-top: -50px;
-} */
-
 .section-up {
   display: flex;
   flex-direction: column;
 }
-
-/* .section-down {
-  background-color: lightblue;
-  width: 100%;
-  height: 400px;
-  margin-top: -700px;
-  display: flex;
-  align-items: flex-end;
-  padding: 30px;
-} */
 
 .section-down {
   background-color: chocolate;
@@ -181,75 +158,6 @@ a {
   height: 1px;
   background-color: rgb(198, 169, 169);
 }
-
-/* article {
-  background-color: lightblue;
-  width: 100%;
-  height: 600px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-article h2 {
-  margin-bottom: 20px;
-}
-
-article ul {
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-article ul li {
-  background-color: rgb(146, 210, 232);
-  height: auto;
-  width: 150px;
-  margin: 20px 5px;
-  text-align: center;
-  border: 1px solid rgb(93, 192, 224);
-  border-radius: 8px;
-  padding: 5px 0px;
-}
-
-article ul li:hover {
-  box-shadow: 1px 1px 5px black;
-  transition: 0.2s ease-in-out;
-}
-
-article ul li img {
-  width: 148px;
-  height: 100px;
-}
-
-article ul li button {
-  display: inline-block;
-  background-color: transparent;
-  a {
-    color: rgb(42, 113, 136);
-  }
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  border: 1px solid rgb(93, 192, 224);
-}
-
-article ul li button:hover {
-  background-color: #45a049;
-  a {
-    color: white;
-  }
-}
-
-article ul li button img {
-  width: 10px;
-  height: 10px;
-} */
 
 /***
 
