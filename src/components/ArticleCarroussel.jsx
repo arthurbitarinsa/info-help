@@ -36,7 +36,7 @@ function ArticleCarroussel() {
     {
       title: "Language Learning",
       img: "https://eslbrains.com/wp-content/uploads/2019/09/how-to-learn-a-language-like-a-hyper-polyglot-473x381.png",
-      link: "/language-learning",
+      link: "/language",
     },
     {
       title: "Psychological Help",
