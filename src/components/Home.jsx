@@ -113,6 +113,7 @@ function Home() {
         <div className="section-up">
           <ImageCarousel />
         </div>
+        {/*
         <div className="section-down">
           <img src={logo} alt="" style={{ width: "30%" }} />
           <div className="text-content">
@@ -121,7 +122,7 @@ function Home() {
             </p>
             <button className="get-informed-btn">{t("Get_informed")}</button>
           </div>
-        </div>
+        </div> */}
         <ArticleCarroussel />
       </section>
 

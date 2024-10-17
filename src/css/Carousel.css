@@ -26,7 +26,7 @@
 /* Carousel image styles */
 .carousel-image {
   width: 100%;
-  height: 80%;
+  height: 700px;
   object-fit: cover;
   border: none;
 }
@@ -109,4 +109,20 @@
   padding: 5px 10px;
   display: block;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .image-div {
+    background-color: red;
+    height: 300px;
+  }
+
+  .slick-dots {
+    position: unset;
+    transform: translateY(-725%);
+  }
+
+  .slick-arrow {
+    margin-top: -230px;
+  }
 }
