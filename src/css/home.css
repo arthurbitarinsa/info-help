@@ -15,12 +15,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  margin-top: 20px;
   height: 100px;
   overflow: hidden;
+  border-radius: 150px;
+  box-shadow: 0.5px 0px 1px green;
   img {
-    width: 110px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 }
 
