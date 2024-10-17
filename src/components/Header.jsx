@@ -44,31 +44,31 @@ function Header() {
       ),
     },
 
-    {
-      value: "nl",
-      label: (
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png"
-            alt="Dutch"
-            style={{ width: "20px", height: "15px" }}
-          />
-        </div>
-      ),
-    },
+    // {
+    //   value: "nl",
+    //   label: (
+    //     <div>
+    //       <img
+    //         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png"
+    //         alt="Dutch"
+    //         style={{ width: "20px", height: "15px" }}
+    //       />
+    //     </div>
+    //   ),
+    // },
 
-    {
-      value: "es",
-      label: (
-        <div>
-          <img
-            src="https://www.larousse.fr/encyclopedie/data/images/1009665-Drapeau_de_lEspagne.jpg"
-            alt="es"
-            style={{ width: "20px", height: "15px" }}
-          />
-        </div>
-      ),
-    },
+    // {
+    //   value: "es",
+    //   label: (
+    //     <div>
+    //       <img
+    //         src="https://www.larousse.fr/encyclopedie/data/images/1009665-Drapeau_de_lEspagne.jpg"
+    //         alt="es"
+    //         style={{ width: "20px", height: "15px" }}
+    //       />
+    //     </div>
+    //   ),
+    // },
 
     // {
     //   value: "pt",
@@ -83,32 +83,32 @@ function Header() {
     //   ),
     // },
 
-    {
-      value: "lg",
-      label: (
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/800px-Flag_of_Uganda.svg.png
-"
-            alt="Luganda"
-            style={{ width: "20px", height: "15px" }}
-          />
-        </div>
-      ),
-    },
+    //     {
+    //       value: "lg",
+    //       label: (
+    //         <div>
+    //           <img
+    //             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/800px-Flag_of_Uganda.svg.png
+    // "
+    //             alt="Luganda"
+    //             style={{ width: "20px", height: "15px" }}
+    //           />
+    //         </div>
+    //       ),
+    //     },
 
-    {
-      value: "sw",
-      label: (
-        <div>
-          <img
-            src="https://cdn.britannica.com/20/20-050-33766E25/Flag-Tanzania.jpg"
-            alt="swahili"
-            style={{ width: "20px", height: "15px" }}
-          />
-        </div>
-      ),
-    },
+    //     {
+    //       value: "sw",
+    //       label: (
+    //         <div>
+    //           <img
+    //             src="https://cdn.britannica.com/20/20-050-33766E25/Flag-Tanzania.jpg"
+    //             alt="swahili"
+    //             style={{ width: "20px", height: "15px" }}
+    //           />
+    //         </div>
+    //       ),
+    //     },
 
     {
       value: "lingala",
