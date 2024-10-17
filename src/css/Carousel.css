@@ -114,15 +114,18 @@
 @media screen and (max-width: 540px) {
   .image-div {
     background-color: red;
-    height: 300px;
+    height: 400px;
   }
 
+  .carousel-image {
+    min-height: 400px;
+  }
   .slick-dots {
     position: unset;
-    transform: translateY(-725%);
+    transform: translateY(-570%);
   }
 
   .slick-arrow {
-    margin-top: -230px;
+    margin-top: -175px;
   }
 }

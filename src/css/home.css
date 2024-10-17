@@ -354,4 +354,12 @@ footer {
       margin-right: -50px;
     }
   }
+
+  .support-form {
+    width: 100%;
+  }
+
+  .p-footer {
+    font-size: small;
+  }
 }
