@@ -87,28 +87,22 @@ p {
   right: -50px; /* Positions the right arrow */
 }
 
-@media screen and (max-width: 768px) {
-  /* Adjustments for smaller screens */
-  .testimonials-slider {
-    flex-direction: column;
+@media screen and (max-width: 1092px) {
+  .prev {
+    transform: translateX(250%);
   }
 
-  .prev,
   .next {
-    position: static;
-    margin-top: 20px;
+    transform: translateX(-250%);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .prev {
+    transform: translateX(170%);
   }
 
-  .testimonial-slide {
-    width: 100%;
-  }
-
-  .testimonial {
-    padding: 15px;
-  }
-
-  .testimonial-img {
-    width: 80px;
-    height: 80px;
+  .next {
+    transform: translateX(-170%);
   }
 }
