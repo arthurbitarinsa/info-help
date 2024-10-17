@@ -132,7 +132,7 @@ function Home() {
             showTestimonial ? "show-testimonial" : ""
           }`}
         >
-          <Testimonial />
+          {/* <Testimonial /> */}
         </div>
       </section>
 
@@ -144,6 +144,7 @@ function Home() {
           <form className="support-form" onSubmit={handleSubmit}>
             <label htmlFor="name">{t("name")}</label>
             <input
+              placeholder="Enter your name"
               type="text"
               id="name"
               name="name"
@@ -154,6 +155,7 @@ function Home() {
 
             <label htmlFor="email">{t("email")}</label>
             <input
+              placeholder="Enter your email"
               type="email"
               id="email"
               name="email"
@@ -164,6 +166,7 @@ function Home() {
 
             <label htmlFor="subject">{t("subject")}</label>
             <input
+              placeholder="Enter your subject"
               type="text"
               id="subject"
               name="subject"

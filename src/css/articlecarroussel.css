@@ -32,8 +32,12 @@ article h2 {
   transition: 0.3s ease-in-out;
 }
 
-.grid-item:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.carousel-content1:hover {
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  background-color: rgb(214, 164, 128);
+  transform: scale(1.02);
+  transition: ease-in 0.3s;
 }
 
 /* Flex container for text and image */
