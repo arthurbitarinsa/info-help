@@ -331,3 +331,16 @@ footer {
     padding: 20px;
   }
 }
+
+@media screen and (max-width: 540px) {
+  .dropdown {
+    margin-right: 60px;
+  }
+  .dropdown-content {
+    padding: 20px;
+  }
+
+  .article-grid {
+    max-height: 400px;
+  }
+}
