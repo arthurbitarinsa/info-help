@@ -28,7 +28,7 @@ function Footer() {
       </div>
 
       <div className="p-footer">
-        <p>&copy; INFO-HELP {t("rigths")}</p>
+        <p>&copy; PATH FINDER BRUSSELS {t("rigths")}</p>
       </div>
     </footer>
   );
