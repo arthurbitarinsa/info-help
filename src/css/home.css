@@ -1,6 +1,6 @@
 header {
   background-color: white;
-  height: 100px;
+  height: 120px;
   width: 100%;
   padding: 55px 0px;
   display: flex;
@@ -17,10 +17,11 @@ header {
   align-items: center;
   justify-content: center;
   padding-top: 10px;
-  margin-top: 20px;
+  margin-top: 5px;
   height: 100px;
   overflow: hidden;
-  border-radius: 150px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
   box-shadow: 0.5px 0px 1px green;
   img {
     width: 130px;
@@ -268,6 +269,10 @@ footer {
   width: 100%;
 }
 
+footer h3 {
+  color: rgb(43, 43, 43);
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -390,6 +395,79 @@ footer {
 
 .scroll-icon {
   font-size: 24px;
+}
+
+/* Chat button styles */
+.chat-button {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Chat modal styles */
+.chat-modal {
+  position: fixed;
+  bottom: 180px; /* Adjust the bottom value so it appears above the chat button */
+  right: 20px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 300px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-chat-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Form styling for chat */
+.chat-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-form input,
+.chat-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.chat-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
 @media screen and (max-width: 1092px) {

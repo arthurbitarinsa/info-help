@@ -5,10 +5,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import emailjs from "emailjs-com";
 import { useTranslation } from "react-i18next";
-import logo from "../images/Helplogo.png";
 import ArticleCarroussel from "./ArticleCarroussel";
-import Testimonial from "./Testimonial";
-import { FaArrowUp } from "react-icons/fa";
+import { FaArrowUp, FaComments } from "react-icons/fa";
 
 function Home() {
   const { t } = useTranslation();
@@ -20,12 +18,18 @@ function Home() {
     message: "",
   });
 
+  const [smallFormData, setSmallFormData] = useState({
+    email: "",
+    message: "",
+  });
+
   const [submissionStatus, setSubmissionStatus] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const [showTestimonial, setShowTestimonial] = useState(false); // State to track testimonial visibility
+  const [smallFormSubmissionStatus, setSmallFormSubmissionStatus] =
+    useState("");
   const [showScrollTopButton, setShowScrollTopButton] = useState(false); // State for scroll top button
-  const testimonialRef = useRef(); // Ref for the Testimonial
+  const [showChatButton, setShowChatButton] = useState(true); // State for chat button visibility
+  const [showChatModal, setShowChatModal] = useState(false);
 
   // Scroll-to-top function
   const scrollToTop = () => {
@@ -35,27 +39,20 @@ function Home() {
     });
   };
 
+  // Show scroll top button when scrolled down
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setShowTestimonial(true); // Show testimonial when it enters the view
-          }
-        });
-      },
-      { threshold: 0.3 } // Trigger when 30% of the component is visible
-    );
-
-    if (testimonialRef.current) {
-      observer.observe(testimonialRef.current);
-    }
-
-    return () => {
-      if (testimonialRef.current) {
-        observer.unobserve(testimonialRef.current);
+    const handleScroll = () => {
+      if (window.scrollY > 400) {
+        setShowScrollTopButton(true);
+        setShowChatButton(true);
+      } else {
+        setShowScrollTopButton(false);
+        setShowChatButton(false);
       }
     };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleInputChange = (e) => {
@@ -66,19 +63,13 @@ function Home() {
     });
   };
 
-  // Show scroll top button when scrolled down
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setShowScrollTopButton(true);
-      } else {
-        setShowScrollTopButton(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const handleSmallFormInputChange = (e) => {
+    const { name, value } = e.target;
+    setSmallFormData({
+      ...smallFormData,
+      [name]: value,
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -128,6 +119,52 @@ function Home() {
       });
   };
 
+  const handleSmallFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!smallFormData.email || !smallFormData.message) {
+      setSmallFormSubmissionStatus("All fields must be filled.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSmallFormSubmissionStatus("");
+
+    const data = {
+      from_email: smallFormData.email,
+      message: smallFormData.message,
+    };
+
+    emailjs
+      .send("service_aaugfif", "template_l0pqac4", data, "Nf26RqiFHwaDuc0ni")
+      .then(
+        (response) => {
+          console.log("Message sent successfully : ", response);
+          setSmallFormSubmissionStatus(
+            "Thank you for your message! We will get back to you soon."
+          );
+          setSmallFormData({
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("Failed to send the message : ", error);
+          setSmallFormSubmissionStatus(
+            "Message sending failed. Please try again."
+          );
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
+  };
+
+  // Toggle chat modal visibility
+  const toggleChatModal = () => {
+    setShowChatModal(!showChatModal);
+  };
+
   return (
     <>
       <Header />
@@ -137,34 +174,11 @@ function Home() {
         <div className="section-up">
           <ImageCarousel />
         </div>
-        {/*
-        <div className="section-down">
-          <img src={logo} alt="" style={{ width: "30%" }} />
-          <div className="text-content">
-            <p>
-              <i>{t("dedicated_message")} </i>
-            </p>
-            <button className="get-informed-btn">{t("Get_informed")}</button>
-          </div>
-        </div> */}
         <ArticleCarroussel />
       </section>
 
-      {/* <section className="testimonial-section" ref={testimonialRef}>
-        <div
-          className={`testimonial-wrapper ${
-            showTestimonial ? "show-testimonial" : ""
-          }`}
-        >
-           <Testimonial /> 
-        </div>
-      </section> */}
-
       <section className="section2">
         <div className="support-container">
-          {/* <div className="support-h1">
-            <h1>{t("message")}</h1>
-          </div> */}
           <h1>Write to Us</h1>
           <form className="support-form" onSubmit={handleSubmit}>
             <label htmlFor="name">{t("name")}</label>
@@ -220,7 +234,50 @@ function Home() {
         </div>
       </section>
 
-      {/* Scroll to Top button */}
+      {showChatButton && (
+        <button className="chat-button" onClick={toggleChatModal}>
+          <FaComments />
+        </button>
+      )}
+
+      {/* Chat Modal */}
+      {showChatModal && (
+        <div className="chat-modal">
+          <button className="close-chat-modal" onClick={toggleChatModal}>
+            &times;
+          </button>
+          <form className="chat-form" onSubmit={handleSmallFormSubmit}>
+            <label htmlFor="email">{t("email")}</label>
+            <input
+              placeholder="Enter your email"
+              type="email"
+              id="email"
+              name="email"
+              value={smallFormData.email}
+              onChange={handleSmallFormInputChange}
+              required
+            />
+
+            <label htmlFor="message">{t("message_placeholder")}</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="3"
+              value={smallFormData.message}
+              onChange={handleSmallFormInputChange}
+              required
+            ></textarea>
+
+            <button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? t("sending") : t("Submit")}
+            </button>
+          </form>
+          {smallFormSubmissionStatus && (
+            <p className="success-message">{smallFormSubmissionStatus}</p>
+          )}
+        </div>
+      )}
+
       {showScrollTopButton && (
         <div className="scroll-to-top" onClick={scrollToTop}>
           <FaArrowUp className="scroll-icon" />
