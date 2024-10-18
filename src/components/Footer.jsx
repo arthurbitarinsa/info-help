@@ -125,12 +125,12 @@ function Footer() {
       </div>
 
       {/* Back to Top Button */}
-      <div
+      {/* <div
         className={`back-to-top ${isVisible ? "show" : ""}`}
         onClick={scrollToTop}
       >
         &#8679;
-      </div>
+      </div> */}
     </footer>
   );
 }

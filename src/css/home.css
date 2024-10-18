@@ -370,7 +370,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff; /* Change to the color you want */
+  background-color: green; /* Change to the color you want */
   color: white;
   border-radius: 50%;
   width: 50px;
@@ -380,7 +380,8 @@ footer {
   align-items: center;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
-  opacity: 0.8;
+  opacity: 0.7;
+  z-index: 1;
 }
 
 .scroll-to-top:hover {
