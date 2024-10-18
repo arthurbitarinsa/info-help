@@ -88,7 +88,7 @@ function Footer() {
         <div className="footer-contact">
           <h3>{t("Contact Us")}</h3>
           <p>Email: pathfinderbrussels@gmail.com</p>
-          <p>Phone: +32 2 1200 000</p>
+  
           <p>Address: Brussels, Belgium</p>
         </div>
 
