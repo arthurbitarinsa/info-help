@@ -150,15 +150,15 @@ function Home() {
         <ArticleCarroussel />
       </section>
 
-      <section className="testimonial-section" ref={testimonialRef}>
+      {/* <section className="testimonial-section" ref={testimonialRef}>
         <div
           className={`testimonial-wrapper ${
             showTestimonial ? "show-testimonial" : ""
           }`}
         >
-          {/* <Testimonial /> */}
+           <Testimonial /> 
         </div>
-      </section>
+      </section> */}
 
       <section className="section2">
         <div className="support-container">
