@@ -260,54 +260,6 @@ a {
 /***
 
 */
-/* 
-footer {
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0px 132px;
-}
-
-.footer-container {
-  padding: 20px 0px;
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.p-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.footer-icons i {
-  font-size: 20px;
-  margin: 10px;
-  cursor: pointer;
-  color: rgb(110, 204, 236);
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.footer-links a:hover {
-  color: orange;
-  text-decoration: underline;
-}
-
-.footer-icons i:hover {
-  color: orange;
-} */
-
-/* Add to home.css or create a separate footer.css for better organization */
 footer {
   background-color: whitesmoke;
   color: #ecf0f1;
@@ -488,5 +440,10 @@ footer {
 
   .p-footer {
     font-size: small;
+  }
+
+  .footer-links,
+  .footer-icons {
+    min-width: 100%;
   }
 }
