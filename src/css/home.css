@@ -261,7 +261,7 @@ a {
 
 */
 footer {
-  background-color: whitesmoke;
+  background-color: white;
   color: #ecf0f1;
   padding: 40px 0;
   position: relative;
@@ -312,6 +312,7 @@ footer {
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px solid #cdd3da;
+  margin-bottom: 20px;
 }
 
 .footer-contact h3,
@@ -322,6 +323,7 @@ footer {
 .footer-contact p {
   font-size: 14px;
   color: #333;
+  margin-bottom: 10px;
 }
 
 .back-to-top {
