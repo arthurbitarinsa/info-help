@@ -152,31 +152,7 @@ function Language() {
             </div>
           </div>
 
-          <div className="article">
-            <img
-              src="https://www.bruxellesfle.be/wp-content/uploads/2021/05/miniature-LEE-300.png"
-              alt="Maison Médicale Galilée"
-              className="article-img"
-            />
-            <div className="article-details">
-              <h3>Lire et Ecrire Bruxelles</h3>
-              <p>
-                Address - rue de la Borne 14 bte 9 1080 Bruxelles, Belgique{" "}
-                <br />
-                Telephone: 02 412 56 10 <br />
-                Fax : 02 412 56 11 <br />
-                Email: bruxelles@lire-et-ecrire.be
-              </p>
-              <a
-                href="https://lire-et-ecrire.be/bruxelles"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="article-button"
-              >
-                {t("visite")}
-              </a>
-            </div>
-          </div>
+          
         </div>
       </div>
       <Footer />
