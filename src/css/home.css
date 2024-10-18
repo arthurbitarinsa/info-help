@@ -179,12 +179,20 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgb(235, 214, 187) 0%,
+    rgb(224, 180, 144) 50%,
+    rgb(216, 160, 92) 100%
+  );
+  color: gray;
 }
 
 .support-container {
   width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
@@ -206,9 +214,9 @@ a {
   display: flex;
   flex-direction: column;
   border: 1px double white;
-  width: 100%;
+  min-width: 70%;
   padding: 20px;
-  box-shadow: 1px 1px 5px white;
+  box-shadow: 1px 1px 10px gray;
   color: color;
 }
 
@@ -252,7 +260,7 @@ a {
 /***
 
 */
-
+/* 
 footer {
   background-color: whitesmoke;
   display: flex;
@@ -297,7 +305,90 @@ footer {
 
 .footer-icons i:hover {
   color: orange;
+} */
+
+/* Add to home.css or create a separate footer.css for better organization */
+footer {
+  background-color: whitesmoke;
+  color: #ecf0f1;
+  padding: 40px 0;
+  position: relative;
+  width: 100%;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+.footer-links,
+.footer-icons,
+.footer-contact {
+  flex-basis: 30%;
+  margin: 10px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 8px 0;
+  display: block;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #1abc9c;
+}
+
+.footer-icons i {
+  color: #888888;
+  margin-right: 15px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.footer-icons i:hover {
+  color: green;
+}
+
+.p-footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #cdd3da;
+}
+
+.footer-contact h3,
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: #333;
+}
+
+.back-to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+.back-to-top.show {
+  display: block;
+}
+
+/** */
 
 .testimonial-wrapper {
   opacity: 0;

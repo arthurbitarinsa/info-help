@@ -162,9 +162,10 @@ function Home() {
 
       <section className="section2">
         <div className="support-container">
-          <div className="support-h1">
+          {/* <div className="support-h1">
             <h1>{t("message")}</h1>
-          </div>
+          </div> */}
+          <h1>Write to Us</h1>
           <form className="support-form" onSubmit={handleSubmit}>
             <label htmlFor="name">{t("name")}</label>
             <input
