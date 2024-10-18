@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import logo from "../images/Helplogo.png";
 import ArticleCarroussel from "./ArticleCarroussel";
 import Testimonial from "./Testimonial";
+import { FaArrowUp } from "react-icons/fa";
 
 function Home() {
   const { t } = useTranslation();
@@ -23,7 +24,16 @@ function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [showTestimonial, setShowTestimonial] = useState(false); // State to track testimonial visibility
+  const [showScrollTopButton, setShowScrollTopButton] = useState(false); // State for scroll top button
   const testimonialRef = useRef(); // Ref for the Testimonial
+
+  // Scroll-to-top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -55,6 +65,20 @@ function Home() {
       [name]: value,
     });
   };
+
+  // Show scroll top button when scrolled down
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollTopButton(true);
+      } else {
+        setShowScrollTopButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -194,6 +218,14 @@ function Home() {
           )}
         </div>
       </section>
+
+      {/* Scroll to Top button */}
+      {showScrollTopButton && (
+        <div className="scroll-to-top" onClick={scrollToTop}>
+          <FaArrowUp className="scroll-icon" />
+        </div>
+      )}
+
       <Footer />
     </>
   );

@@ -320,6 +320,31 @@ footer {
   transform: translateY(0);
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff; /* Change to the color you want */
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+}
+
+.scroll-icon {
+  font-size: 24px;
+}
+
 @media screen and (max-width: 1092px) {
   .sectionall {
     display: flex;
