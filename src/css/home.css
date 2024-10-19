@@ -269,7 +269,7 @@ a {
 footer {
   background-color: white;
   color: #ecf0f1;
-  padding: 40px 0;
+  padding-top: 40px;
   position: relative;
   width: 100%;
   display: flex;
@@ -322,10 +322,8 @@ footer h3 {
 .p-footer {
   text-align: center;
   font-size: 14px;
-  margin-top: 20px;
-  padding-top: 10px;
+  padding: 20px;
   border-top: 1px solid #cdd3da;
-  margin-bottom: 20px;
   color: black;
 }
 
