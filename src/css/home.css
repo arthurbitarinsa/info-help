@@ -245,7 +245,7 @@ a {
 }
 
 .support-form button {
-  background-color: #45a049;
+  background-color: #918c8c;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -375,7 +375,7 @@ footer h3 {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: green; /* Change to the color you want */
+  background-color: chocolate; /* Change to the color you want */
   color: white;
   border-radius: 50%;
   width: 50px;
@@ -402,7 +402,7 @@ footer h3 {
   position: fixed;
   bottom: 100px;
   right: 20px;
-  background-color: #007bff;
+  background-color: rgb(216, 147, 98);
   border: none;
   color: white;
   border-radius: 50%;
@@ -413,7 +413,7 @@ footer h3 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1;
 }
 
 /* Chat modal styles */
