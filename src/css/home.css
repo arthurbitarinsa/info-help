@@ -202,6 +202,7 @@ a {
 .support-container h1 {
   margin-bottom: 20px;
   text-align: center;
+  color: #2a7188;
 }
 
 .div-form {
@@ -219,6 +220,10 @@ a {
   padding: 20px;
   box-shadow: 1px 1px 10px gray;
   color: color;
+}
+
+.support-container label {
+  color: #2a7188;
 }
 
 .support-h1 {
@@ -267,6 +272,9 @@ footer {
   padding: 40px 0;
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 footer h3 {
@@ -318,6 +326,7 @@ footer h3 {
   padding-top: 10px;
   border-top: 1px solid #cdd3da;
   margin-bottom: 20px;
+  color: black;
 }
 
 .footer-contact h3,
@@ -414,6 +423,11 @@ footer h3 {
   justify-content: center;
   cursor: pointer;
   z-index: 1;
+}
+
+.chat-button:hover {
+  background-color: chocolate;
+  transition: ease-in-out 0.7s;
 }
 
 /* Chat modal styles */
