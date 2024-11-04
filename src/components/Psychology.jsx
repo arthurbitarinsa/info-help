@@ -73,8 +73,38 @@ function Psychology() {
               </a>
             </div>
           </div>
+
+
+          <div className="article">
+            <img
+              src="https://www.donorinfo.be/sites/default/files/styles/logo_mediumsize/public/2024-01/Sans%20titre.jpg?itok=GrhkU_A-"
+              alt="PAG-ASA"
+              className="article-img"
+            />
+            <div className="article-details">
+              <h3>Solentra</h3>
+              <p>
+                Address - Sainctelette Square 17
+                1000 Brussel <br />
+                Available by telephone on weekdays from 9 am to 1 pm (except Wednesdays) <br />
+            
+                Telephone: 02 477 57 15 <br />
+                
+              </p>
+              <a
+                href="https://solentra.be/en/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="article-button"
+              >
+                {t("visite")}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+
+      
       <Footer />
     </>
   );
