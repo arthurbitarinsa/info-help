@@ -4,6 +4,7 @@
   margin: auto;
   position: relative;
   margin-top: -20px;
+  z-index: 2;
 }
 
 .slick-dots {
@@ -68,7 +69,7 @@
 
 .view-more-btn {
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: rgb(189, 149, 120);
   color: white;
   border: none;
   border-radius: 5px;
